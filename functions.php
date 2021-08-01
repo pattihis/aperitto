@@ -71,16 +71,8 @@ if ( ! function_exists( 'aperitto_enqueue_style_and_script' ) ) :
 
 		wp_enqueue_script( 'aperitto-scripts', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), true, true );
 
-		if ( is_singular() ) {
-			$socbtns = aperitto_get_theme_option( 'social_share', 'custom' );
-
-			if ( 'yandex' == $socbtns ) {
-				wp_enqueue_script( 'aperitto-yandexshare', '//yastatic.net/share2/share.js', array(), true, true );
-			}
-
-			if ( comments_open() && get_option( 'thread_comments' ) ) {
-				wp_enqueue_script( 'comment-reply', false, true, true );
-			}
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply', false, true, true );
 		}
 
 	}
@@ -121,43 +113,6 @@ if ( ! function_exists( 'aperitto_widgets_init' ) ) :
 endif;
 add_action( 'widgets_init', 'aperitto_widgets_init' );
 
-
-/* ==========================================================================
- *  Add Open Graph meta for singular pages
- * ========================================================================== */
-if ( ! function_exists( 'aperitto_add_social' ) ) :
-	function aperitto_add_social( $content ) {
-		global $post;
-
-		if ( is_singular() && aperitto_get_theme_option( 'add_social_meta' ) ) {
-
-			$aiod  = get_post_meta( $post->ID, '_aioseop_description', true );
-			$descr = ( isset( $aiod ) ) ? esc_html( $aiod ) : $post->post_excerpt;
-
-			$title    = get_the_title();
-			$url      = get_the_permalink();
-			$blogname = get_bloginfo( 'name' );
-			$img      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail', false );
-
-			echo <<<EOT
-
-<!-- BEGIN social meta -->
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="$title"/>
-<meta property="og:description" content="$descr" />
-<meta property="og:image" content="$img[0]"/>
-<meta property="og:url" content="$url"/>
-<meta property="og:site_name" content="$blogname"/>
-<link rel="image_src" href="$img[0]" />
-<!-- END social meta -->
-
-
-EOT;
-		}
-	}
-endif;
-add_action( 'wp_head', 'aperitto_add_social' );
-/* ========================================================================== */
 
 
 /* ========================================================================== *

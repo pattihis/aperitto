@@ -638,103 +638,6 @@ function aperitto_customizer_init( $wp_customize ) {
 		)
 	);
 
-	// -------  S O C I A L ------------------------------------------------------------------
-
-	$wp_customize->add_section( 'social',
-		array(
-			'title'       => __( 'Social', 'aperitto' ),
-			'description' => __( 'Social buttons', 'aperitto' ),
-			'priority'    => 81,
-			'panel'       => 'aperitto_single_options',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[add_social_meta]',
-		array(
-			'type'              => 'option',
-			'default'           => '0',
-			'sanitize_callback' => 'sanitize_key',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'add_social_meta_control',
-		array(
-			'settings' => APERITTO_OPTION . '[add_social_meta]',
-			'label'    => __( "Add Open Graph tags to &lt;head&gt;", 'aperitto' ),
-			'section'  => 'social',
-			'type'     => 'checkbox',
-		)
-	);
-
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[social_share]',
-		array(
-			'type'              => 'option',
-			'default'           => 'custom',
-			'sanitize_callback' => 'sanitize_key',
-			'transport'         => 'refresh'
-		)
-	);
-	$wp_customize->add_control( 'social_share_control',
-		array(
-			'settings' => APERITTO_OPTION . '[social_share]',
-			'label'    => __( "Social share buttons after post", 'aperitto' ),
-			'section'  => 'social',
-			'type'     => 'select',
-			'choices'  => array(
-				'hide'   => __( "Hide", 'aperitto' ),
-				'custom' => __( "Custom theme buttons", 'aperitto' ),
-				'yandex' => __( "Yandex Buttons", 'aperitto' ),
-			),
-		)
-	);
-
-
-	// -----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[title_before_socshare]',
-		array(
-			'type'              => 'option',
-			'default'           => '',
-			'sanitize_callback' => 'aperitto_sanitize_text',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'title_before_socshare_control',
-		array(
-			'settings' => APERITTO_OPTION . '[title_before_socshare]',
-			'label'    => __( "Custom text before share buttons", 'aperitto' ),
-			'section'  => 'social',
-			'type'     => 'text',
-		)
-	);
-
-
-	// ----
-
-	$wp_customize->add_setting( 'hide_socshare_on_pages',
-		array(
-			'default'           => 0,
-			'sanitize_callback' => 'sanitize_key',
-			'transport'         => 'refresh',
-		)
-	);
-	$wp_customize->add_control( 'hide_socshare_on_pages_control',
-		array(
-			'settings' => 'hide_socshare_on_pages',
-			'label'    => __( "Hide share buttons on static pages", 'aperitto' ),
-			'section'  => 'social',
-			'type'     => 'checkbox',
-		)
-	);
-
 
 	// --------  S T U C T U R E D   D A T A   --------------------------------------------------
 
@@ -753,7 +656,7 @@ function aperitto_customizer_init( $wp_customize ) {
 		APERITTO_OPTION . '[schema_mark]',
 		array(
 			'type'              => 'option',
-			'default'           => '1',
+			'default'           => '0',
 			'sanitize_callback' => 'sanitize_key',
 			'transport'         => $transport
 		)
@@ -833,12 +736,12 @@ function aperitto_customizer_init( $wp_customize ) {
 	) );
 
 
-	// --------  Advertisement   C O D E S  --------------------------------------------------
+	// --------  Advertisement Banners or Custom Code  --------------------------------------------------
 
 	$wp_customize->add_section( 'aperitto_advertisement',
 		array(
-			'title'       => __( 'Advertisement', 'aperitto' ),
-			'description' => __( 'Setup advertisement before and after post content', 'aperitto' ),
+			'title'       => __( 'Ad Banners', 'aperitto' ),
+			'description' => __( 'Setup advertisement banners or custom code before and after post content', 'aperitto' ),
 			'panel'       => 'aperitto_single_options',
 		)
 	);

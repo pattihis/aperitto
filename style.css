@@ -1,16 +1,18 @@
 /*
- * Theme Name: Aperitto
- * Description: Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean typography and spacious white layout make it great for any project. The user friendly customization options will get your site up and running in minutes. It features custom color options, customized layouts (left or right sidebar, full-width or centered content). Social share buttons, structured data mark-up, clean, valid and SEO-friendly code. Aperitto is ready to be used with child themes and is is developer-friendly with custom filters, hooks and actions. Fully compatible with WPML, WooCommerce and bbPress. Also, translation ready with English, Greek, Russian, Ukrainian, French, German, Polish included.
- * Tested up to: 5.8
- * Requires PHP: 7.0
- * Author: George Pattihis
- * Author URI: https://wordpress.org/support/users/pattihis/
- * Version: 1.0.0
- * License: GNU General Public License v2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
- * Text Domain: aperitto
- */
+Theme Name: Aperitto
+Theme URI: https://wordpress.org/themes/aperitto/
+Author: George Pattihis
+Author URI: https://wordpress.org/support/users/pattihis/
+Description: Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean typography and spacious white layout make it great for any project. The user friendly customization options will get your site up and running in minutes. It features custom color options, customized layouts (left or right sidebar, full-width or centered content). Simple structured data mark-up, clean, valid and SEO-friendly code. Aperitto is ready to be used with child themes and is is developer-friendly with custom filters, hooks and actions. Fully compatible with WPML, WooCommerce and bbPress. Translation ready with German, Greek, French, Japanese, Polish, Russian, Turkish and Ukrainian included.
+Version: 1.0.1
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aperitto
+Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
+*/
 
 
 
@@ -352,20 +354,6 @@ button:hover,
 .inform { margin-bottom: 2em; border-bottom: 1px dotted #e2e2e2; }
 .inform h1 { padding-bottom: 1em; }
 .inform .archive-desc { padding: 0 0 2em 4em; }
-
-/* __________ socialshare __________ */
-.social_share { margin: 30px 0 0; padding: 30px 0 0; border-top: 1px solid #DDD; }
-.social_share li, .social_share ul { margin: 0 !important; padding: 0 10px 0 0 !important; list-style: none; }
-.social_share li:before { display: none; }
-.psb { display: block; float: left; height: 40px; width: 40px; margin: 0 10px 0 0; background: url(img/socialshare.png) 0 0 no-repeat; transition: top 0.3s; position: relative; top: 0; }
-.psb, .share42-item { transition: top 0.3s; position: relative; top: 0; }
-.psb:hover, .share42-item:hover { position: relative; top: 3px; }
-.fb { background-position: 0 0; }
-.ok { background-position: -80px 0; }
-.tw { background-position: -40px 0; }
-.vk { background-position: -120px 0; }
-.gp { background-position: -160px 0; }
-
 
 
 /* __________ images __________*/

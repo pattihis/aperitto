@@ -6,7 +6,7 @@ if ( ! defined( 'APERITTO_APP_NAME' ) ) {
 }
 
 if ( ! defined( 'APERITTO_URI' ) ) {
-	define( 'APERITTO_URI', 'https://profiles.wordpress.org/pattihis/' );
+	define( 'APERITTO_URI', 'https://wordpress.org/themes/aperitto/' );
 }
 
 define( 'APERITTO_OPTION', 'aperitto_theme_options_' . APERITTO_APP_NAME );

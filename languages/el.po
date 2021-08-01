@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Aperitto\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-28 20:03+0000\n"
-"PO-Revision-Date: 2021-07-29 19:13+0000\n"
+"PO-Revision-Date: 2021-08-01 21:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Loco-Version: 2.5.3; wp-5.8\n"
 "X-Domain: aperitto"
 
-#: functions.php:182 inc/schemaorg.php:26
+#: functions.php:140 inc/schemaorg.php:25
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s στο %2$s"
@@ -28,35 +28,31 @@ msgstr "&larr; Προηγούμενο"
 msgid "&larr; Older Comments"
 msgstr "← Παλαιότερα Σχόλια"
 
-#: inc/customizer/customizer-settings.php:685
-msgid "Add Open Graph tags to &lt;head&gt;"
-msgstr "Προσθέστε Open Graph ετικέτες στο <head>"
+#: inc/customizer/customizer-settings.php:743
+msgid "Ad Banners"
+msgstr "Διαφημίσεις/Μπανερς"
 
 #: inc/woo-hooks.php:17
 msgid "Add to Cart"
 msgstr "Προσθήκη στο Καλάθι"
 
-#: functions.php:110
+#: functions.php:105
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Προσθέστε widgets εδώ για να εμφανίζονται στο sidebar σας."
 
-#: inc/customizer/customizer-settings.php:1003
+#: inc/customizer/customizer-settings.php:886
 msgid "Add your custom CSS styles"
 msgstr "Προσθέστε προσαρμοσμένο κώδικα CSS"
 
-#: inc/customizer/customizer-settings.php:825
+#: inc/customizer/customizer-settings.php:708
 msgid "Address"
 msgstr "Διεύθυνση"
 
-#: inc/customizer/customizer-settings.php:860
-msgid "Advertisement"
-msgstr "Διαφήμιση"
-
-#: inc/customizer/customizer-settings.php:901
+#: inc/customizer/customizer-settings.php:784
 msgid "After content"
 msgstr "Μετά από το περιεχόμενο"
 
-#: inc/customizer/customizer-settings.php:1028
+#: inc/customizer/customizer-settings.php:911
 msgid "All rights reserved"
 msgstr "Όλα τα δικαιώματα διατηρούνται"
 
@@ -66,15 +62,19 @@ msgstr "Aperitto"
 
 #. Description of the theme
 msgid ""
-"Aperitto is fully responsive, clean and minimal WordPress theme. It has "
-"various options in WordPress Customizer to change look of the theme - "
-"primary design color, background and header, page layout (left or right "
-"sidebar, full or centered content). Clean valid code, semantic markup, "
-"markup by Schema.org, full adaptation to mobile devices. Aperitto is ready "
-"to use with child themes and gives for developers simple design change with "
-"custom hooks and action. Translation Ready (English, Greek, Russian, "
-"Ukrainian, French, German, Polish, Turkish). Fully compatible with WPML, "
-"WooCommerce, bbPress."
+"Aperitto is a clean, simple, minimal and responsive WordPress theme.  The "
+"clean typography and spacious white layout make it great for any project. "
+"The user friendly customization options will get your site up and running in "
+"minutes. It features custom color options, customized layouts (left or right "
+"sidebar, full-width or centered content). Simple structured data mark-up, "
+"clean, valid and SEO-friendly code. Aperitto is ready to be used with child "
+"themes and is is developer-friendly with custom filters, hooks and actions. "
+"Fully compatible with WPML, WooCommerce and bbPress. Also, translation ready "
+"with English, Greek, Russian, Ukrainian, French, German, Polish included."
+msgstr ""
+
+#: footer.php:39
+msgid "Aperitto Theme"
 msgstr ""
 
 #: archive.php:30
@@ -85,27 +85,27 @@ msgstr "Αρχείο"
 msgid "Author archives"
 msgstr "Αρχείο συγγραφέα"
 
-#: inc/customizer/customizer-settings.php:273
+#: inc/customizer/customizer-settings.php:264
 msgid "Background"
 msgstr "Παρασκήνιο"
 
-#: inc/customizer/customizer-settings.php:242
+#: inc/customizer/customizer-settings.php:233
 msgid "Background with full repeat"
 msgstr "Παρασκήνιομε πλήρη επανάληψη"
 
-#: inc/customizer/customizer-settings.php:243
+#: inc/customizer/customizer-settings.php:234
 msgid "Background with horizontal repeat"
 msgstr "Παρασκήνιομε οριζόντια επανάληψη"
 
-#: inc/customizer/customizer-settings.php:244
+#: inc/customizer/customizer-settings.php:235
 msgid "Background with vertical repeat"
 msgstr "Παρασκήνιο με κάθετη επανάληψη"
 
-#: inc/customizer/customizer-settings.php:241
+#: inc/customizer/customizer-settings.php:232
 msgid "Background without repeat"
 msgstr "Παρασκήνιο χωρίς επανάληψη"
 
-#: inc/customizer/customizer-settings.php:880
+#: inc/customizer/customizer-settings.php:763
 msgid "Before content"
 msgstr "Πριν το περιεχόμενο"
 
@@ -113,7 +113,7 @@ msgstr "Πριν το περιεχόμενο"
 msgid "Blog home page H1"
 msgstr "H1 αρχικής σελίδας"
 
-#: sidebar.php:23
+#: sidebar.php:22
 msgid "Categories"
 msgstr "Κατηγορίες"
 
@@ -125,26 +125,28 @@ msgstr "Κατηγορία"
 msgid "Center"
 msgstr "Κέντρο"
 
-#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:391
-#: inc/customizer/customizer-settings.php:417
-#: inc/customizer/customizer-settings.php:444
-#: inc/customizer/customizer-settings.php:471
-#: inc/customizer/customizer-settings.php:500
-#: inc/customizer/customizer-settings.php:543
-#: inc/customizer/customizer-settings.php:568
-#: inc/customizer/customizer-settings.php:593
+#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:381
+#: inc/customizer/customizer-settings.php:407
+#: inc/customizer/customizer-settings.php:433
+#: inc/customizer/customizer-settings.php:460
+#: inc/customizer/customizer-settings.php:489
+#: inc/customizer/customizer-settings.php:530
+#: inc/customizer/customizer-settings.php:554
+#: inc/customizer/customizer-settings.php:578
 msgid "Centered Content"
 msgstr "Περιεχόμενο στο κέντρο"
 
-#: inc/customizer/customizer-settings.php:310
+#: inc/customizer/customizer-settings.php:301
 msgid "Choose main color"
 msgstr "Επιλέξτε το κύριο χρώμα"
 
-#: inc/customizer/customizer-settings.php:902
+#: inc/customizer/customizer-settings.php:776
+#: inc/customizer/customizer-settings.php:785
 msgid "Code after single post content"
 msgstr "Κώδικας μετά το περιεχόμενο άρθρου"
 
-#: inc/customizer/customizer-settings.php:881
+#: inc/customizer/customizer-settings.php:755
+#: inc/customizer/customizer-settings.php:764
 msgid "Code before single post content"
 msgstr "Κώδικας πριν το περιεχόμενο άρθρου"
 
@@ -152,43 +154,35 @@ msgstr "Κώδικας πριν το περιεχόμενο άρθρου"
 msgid "Comments"
 msgstr "Σχόλια"
 
-#: inc/customizer/customizer-settings.php:639
+#: inc/customizer/customizer-settings.php:623
 msgid "Comments count"
 msgstr "Αριθμός σχολίων"
 
-#: inc/customizer/customizer-settings.php:1036
+#: inc/customizer/customizer-settings.php:919
 msgid "Copyright text"
 msgstr "Κείμενο πνευματικών δικαιωμάτων"
 
-#: inc/customizer/customizer-settings.php:1056
+#: inc/customizer/customizer-settings.php:939
 msgid "Counters code"
 msgstr "Μετρητές κώδικα"
 
-#: inc/customizer/customizer-settings.php:171
+#: inc/customizer/customizer-settings.php:167
 msgid "Custom blog home H1"
 msgstr "Προσαρμοσμένη H1 αρχικής σελίδας blog"
 
-#: inc/customizer/customizer-settings.php:913
+#: inc/customizer/customizer-settings.php:796
 msgid "Custom codes"
 msgstr "Προσαρμοσμένος κώδικας"
 
-#: inc/customizer/customizer-settings.php:982
+#: inc/customizer/customizer-settings.php:865
 msgid "Custom CSS"
 msgstr "Προσαρμοσμένη CSS"
 
-#: inc/customizer/customizer-settings.php:1002
+#: inc/customizer/customizer-settings.php:885
 msgid "Custom styles"
 msgstr "Προσαρμοσμένο στυλ"
 
-#: inc/customizer/customizer-settings.php:732
-msgid "Custom text before share buttons"
-msgstr "Προσαρμοσμένο κείμενο πριν από τα κουμπιά κοινοποίησης"
-
-#: inc/customizer/customizer-settings.php:711
-msgid "Custom theme buttons"
-msgstr "Προσαρμοσμένα κουμπιά θέματος"
-
-#: inc/customizer/customizer-settings.php:1017
+#: inc/customizer/customizer-settings.php:900
 msgid "Customize footer"
 msgstr "Προσαρμογή υποσέλιδου"
 
@@ -204,7 +198,7 @@ msgstr "Προεπιλογή"
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: inc/customizer/customizer-settings.php:288
+#: inc/customizer/customizer-settings.php:279
 msgid "Design"
 msgstr "Σχέδιο"
 
@@ -212,35 +206,35 @@ msgstr "Σχέδιο"
 msgid "Display logo image with site title"
 msgstr "Εμφάνιση λογότυπου μαζί με το τίτλο του site"
 
-#: functions.php:185 inc/schemaorg.php:29
+#: functions.php:143 inc/schemaorg.php:28
 msgid "Edit"
 msgstr "Edit"
 
-#: inc/customizer/customizer-settings.php:784
+#: inc/customizer/customizer-settings.php:667
 msgid "Enable Schema.org mark up according CreativeWork->Article and Comment"
 msgstr ""
 "Ενεργοποίηση Schema.org markup με βάση τα CreativeWork->Article και Comment"
 
-#: inc/customizer/customizer-settings.php:263
+#: inc/customizer/customizer-settings.php:254
 msgid "Fit minimal header height to image height"
 msgstr "Προσάρμοσε το ελάχιστο ύψος επικεφαλίδας στο ύψος της εικόνας"
 
-#: inc/customizer/customizer-settings.php:1016
+#: inc/customizer/customizer-settings.php:899
 msgid "Footer"
 msgstr "Υποσέλιδο"
 
-#: functions.php:35
+#: functions.php:39
 msgid "Footer Menu"
 msgstr "Μενού Υποσέλιδου"
 
-#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:390
-#: inc/customizer/customizer-settings.php:416
-#: inc/customizer/customizer-settings.php:443
-#: inc/customizer/customizer-settings.php:470
-#: inc/customizer/customizer-settings.php:499
-#: inc/customizer/customizer-settings.php:542
-#: inc/customizer/customizer-settings.php:567
-#: inc/customizer/customizer-settings.php:592
+#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:380
+#: inc/customizer/customizer-settings.php:406
+#: inc/customizer/customizer-settings.php:432
+#: inc/customizer/customizer-settings.php:459
+#: inc/customizer/customizer-settings.php:488
+#: inc/customizer/customizer-settings.php:529
+#: inc/customizer/customizer-settings.php:553
+#: inc/customizer/customizer-settings.php:577
 msgid "Fullwidth Content"
 msgstr "Περιεχόμενο πλήρες πλάτους"
 
@@ -248,64 +242,55 @@ msgstr "Περιεχόμενο πλήρες πλάτους"
 msgid "George Pattihis"
 msgstr "George Pattihis"
 
-#: inc/customizer/customizer-settings.php:492
+#: inc/customizer/customizer-settings.php:481
 msgid "Global layout"
 msgstr "Γενική διάταξη"
 
-#: inc/customizer/customizer-settings.php:928
+#: inc/customizer/customizer-settings.php:811
 msgid "Global settings"
 msgstr "Γενικές ρυθμίσεις"
 
-#: footer.php:42
-msgid "GP Media"
-msgstr "GP Media"
-
-#: inc/customizer/customizer-settings.php:710
-msgid "Hide"
-msgstr "Απόκρυψη"
-
-#: inc/customizer/customizer-settings.php:752
-msgid "Hide share buttons on static pages"
-msgstr "Απόκρυψη κουμπιών κοινοποίησης σε στατικές σελίδες"
-
-#: header.php:79 header.php:82
+#: header.php:81 header.php:84
 msgid "Home"
 msgstr "Αρχική"
 
-#: inc/customizer/customizer-settings.php:144
+#: inc/customizer/customizer-settings.php:142
 msgid "Home H1 position"
 msgstr "Θέση H1 αρχικής"
 
-#: inc/customizer/customizer-settings.php:235
+#: inc/customizer/customizer-settings.php:226
 msgid "How to display image"
 msgstr "Πώς να εμφανίσετε την εικόνα"
 
-#: inc/customizer/customizer-settings.php:970
+#: inc/customizer/customizer-settings.php:853
 msgid "HTML code before &lt;/body&gt; tag"
 msgstr "Κώδικας HTML πριν από την ετικέτα </body> "
 
-#: inc/customizer/customizer-settings.php:949
+#: inc/customizer/customizer-settings.php:832
 msgid "HTML code in &lt;head&gt; tag"
 msgstr "Κώδικας HTML μεσα στο <head>"
 
-#. URI of the theme
 #. Author URI of the theme
-msgid "https://profiles.wordpress.org/pattihis/"
-msgstr "https://profiles.wordpress.org/pattihis/"
+msgid "https://wordpress.org/support/users/pattihis/"
+msgstr ""
 
-#: inc/customizer/customizer-settings.php:240
+#. URI of the theme
+msgid "https://wordpress.org/themes/aperitto/"
+msgstr ""
+
+#: inc/customizer/customizer-settings.php:231
 msgid "Image after site title"
 msgstr "Εικόνα μετά τον τίτλο του site"
 
-#: inc/customizer/customizer-settings.php:239
+#: inc/customizer/customizer-settings.php:230
 msgid "Image before site title"
 msgstr "Εικόνας πριν το τίτλο του site"
 
-#: inc/customizer/customizer-settings.php:914
+#: inc/customizer/customizer-settings.php:797
 msgid "It helps you to setup custom scripts and styles"
 msgstr "Bοηθά στη προσθήκη προσαρμοσμένου κώδικα (scripts/styles)"
 
-#: inc/customizer/customizer-settings.php:493
+#: inc/customizer/customizer-settings.php:482
 msgid "It is used when individual page layout is not set"
 msgstr "Χρησιμοποιείται όταν η διάταξη σελίδας δεν έχει οριστεί"
 
@@ -313,35 +298,35 @@ msgstr "Χρησιμοποιείται όταν η διάταξη σελίδας
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Μάλλον δεν υπάρχει κάτι αξιόλογο εδώ. Δοκιμάστε μια αναζήτηση;"
 
-#: inc/customizer/customizer-settings.php:324
+#: inc/customizer/customizer-settings.php:315
 msgid "Layout"
 msgstr "Διάταξη"
 
-#: inc/customizer/customizer-settings.php:383
+#: inc/customizer/customizer-settings.php:374
 msgid "Layout on Home"
 msgstr "Διάταξη αρχικής"
 
-#: inc/customizer/customizer-settings.php:436
+#: inc/customizer/customizer-settings.php:426
 msgid "Layout on Page"
 msgstr "Διάταξη σελίδων"
 
-#: inc/customizer/customizer-settings.php:410
+#: inc/customizer/customizer-settings.php:400
 msgid "Layout on Post"
 msgstr "Διάταξη άρθρων"
 
-#: inc/customizer/customizer-settings.php:464
+#: inc/customizer/customizer-settings.php:453
 msgid "Layout on Search results page"
 msgstr "Διάταξη στη σελίδα αποτελεσμάτων Αναζήτησης"
 
-#: inc/customizer/customizer-settings.php:561
+#: inc/customizer/customizer-settings.php:547
 msgid "Layout on WooCommerce Product page"
 msgstr "Διάταξη στα προϊόντα WooCommerce"
 
-#: inc/customizer/customizer-settings.php:586
+#: inc/customizer/customizer-settings.php:571
 msgid "Layout on WooCommerce Product's category"
 msgstr "Διάταξη στις κατηγορίες προϊόντων WooCommerce"
 
-#: inc/customizer/customizer-settings.php:536
+#: inc/customizer/customizer-settings.php:523
 msgid "Layout on WooCommerce Shop page"
 msgstr "Διάταξη στη σελίδα Shop του WooCommerce"
 
@@ -349,34 +334,30 @@ msgstr "Διάταξη στη σελίδα Shop του WooCommerce"
 msgid "Left"
 msgstr "Αριστερά"
 
-#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:389
-#: inc/customizer/customizer-settings.php:415
-#: inc/customizer/customizer-settings.php:442
-#: inc/customizer/customizer-settings.php:469
-#: inc/customizer/customizer-settings.php:498
-#: inc/customizer/customizer-settings.php:541
-#: inc/customizer/customizer-settings.php:566
-#: inc/customizer/customizer-settings.php:591
+#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:379
+#: inc/customizer/customizer-settings.php:405
+#: inc/customizer/customizer-settings.php:431
+#: inc/customizer/customizer-settings.php:458
+#: inc/customizer/customizer-settings.php:487
+#: inc/customizer/customizer-settings.php:528
+#: inc/customizer/customizer-settings.php:552
+#: inc/customizer/customizer-settings.php:576
 msgid "Leftbar"
 msgstr "Πλαϊνή μπάρα αριστερά"
 
-#: inc/customizer/customizer-settings.php:309
+#: inc/customizer/customizer-settings.php:300
 msgid "Main color"
 msgstr "Κύριο χρώμα"
 
-#: functions.php:34
+#: functions.php:38
 msgid "Main Menu"
 msgstr "Κύριο Μενού"
 
-#: inc/customizer/customizer-settings.php:290
+#: inc/customizer/customizer-settings.php:281
 msgid "Main theme options"
 msgstr "Κύριες επιλογές θέματος"
 
-#: header.php:66
-msgid "Menu"
-msgstr "Μενού"
-
-#: inc/hooks.php:46
+#: inc/hooks.php:45
 msgid "Message"
 msgstr "Μήνυμα"
 
@@ -384,7 +365,7 @@ msgstr "Μήνυμα"
 msgid "Monthly archives:"
 msgstr "Μηνιαία αρχεία:"
 
-#: inc/customizer/customizer-settings.php:150
+#: inc/customizer/customizer-settings.php:148
 msgid "My custom title before posts"
 msgstr "Προσαρμοσμένος τίτλος πριν τα άρθρα"
 
@@ -408,15 +389,15 @@ msgstr "Μόνο εικόνα χωρίς κείμενο"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ουπς! Αυτή η σελίδα δεν βρέθηκε."
 
-#: inc/customizer/customizer-settings.php:210
+#: inc/customizer/customizer-settings.php:201
 msgid "Other"
 msgstr "Άλλο"
 
-#: inc/customizer/customizer-settings.php:611
+#: inc/customizer/customizer-settings.php:595
 msgid "Other options"
 msgstr "Άλλες επιλογές"
 
-#: inc/customizer/customizer-settings.php:804
+#: inc/customizer/customizer-settings.php:687
 msgid "Phone"
 msgstr "Τηλέφωνο"
 
@@ -436,23 +417,23 @@ msgstr "Εικόνα στα δεξιά του κειμένου"
 msgid "Picture under the text"
 msgstr "Εικόνα κάτω από το κείμενο"
 
-#: inc/customizer/customizer-settings.php:654
+#: inc/customizer/customizer-settings.php:635
 msgid "Post"
 msgstr "Άρθρο"
 
-#: inc/customizer/customizer-settings.php:637
+#: inc/customizer/customizer-settings.php:621
 msgid "Post author"
 msgstr "Συγγραφέας άρθρου"
 
-#: inc/customizer/customizer-settings.php:638
+#: inc/customizer/customizer-settings.php:622
 msgid "Post categories"
 msgstr "Κατηγορίες άρθρων"
 
-#: inc/customizer/customizer-settings.php:632
+#: inc/customizer/customizer-settings.php:616
 msgid "Post meta"
 msgstr "Στοιχεία άρθρου"
 
-#: inc/customizer/customizer-settings.php:640
+#: inc/customizer/customizer-settings.php:624
 msgid "Post tags"
 msgstr "Ετικέτες άρθρου"
 
@@ -460,11 +441,15 @@ msgstr "Ετικέτες άρθρου"
 msgid "Posts not found"
 msgstr "Άρθρο δεν βρέθηκε"
 
-#: inc/customizer/customizer-settings.php:636
+#: footer.php:38
+msgid "Powered by"
+msgstr ""
+
+#: inc/customizer/customizer-settings.php:620
 msgid "Publication date"
 msgstr "Ημερομηνία δημοσίευσης"
 
-#: inc/customizer/customizer-settings.php:849
+#: inc/customizer/customizer-settings.php:732
 msgid "Publisher logo"
 msgstr "Λογότυπο εκδότη"
 
@@ -476,33 +461,29 @@ msgstr "Διαβάστε περισσότερα"
 msgid "Right"
 msgstr "Δεξιά"
 
-#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:388
-#: inc/customizer/customizer-settings.php:414
-#: inc/customizer/customizer-settings.php:441
-#: inc/customizer/customizer-settings.php:468
-#: inc/customizer/customizer-settings.php:497
-#: inc/customizer/customizer-settings.php:540
-#: inc/customizer/customizer-settings.php:565
-#: inc/customizer/customizer-settings.php:590
+#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:378
+#: inc/customizer/customizer-settings.php:404
+#: inc/customizer/customizer-settings.php:430
+#: inc/customizer/customizer-settings.php:457
+#: inc/customizer/customizer-settings.php:486
+#: inc/customizer/customizer-settings.php:527
+#: inc/customizer/customizer-settings.php:551
+#: inc/customizer/customizer-settings.php:575
 msgid "Rightbar"
 msgstr "Πλαϊνή μπάρα δεξιά"
 
-#: inc/customizer/customizer-settings.php:817
-msgid "Russia"
-msgstr "Ρωσία"
-
-#: inc/hooks.php:43
+#: inc/hooks.php:42
 msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 "Αποθήκευσε τα στοιχεία μου σε αυτό το πρόγραμμα περιήγησης για την επόμενη "
 "φορά που θα σχολιάσω."
 
-#: inc/customizer/customizer-settings.php:948
+#: inc/customizer/customizer-settings.php:831
 msgid "Scripts in header"
 msgstr "Scripts στην επικεφαλίδα"
 
-#: inc/customizer/customizer-settings.php:969
+#: inc/customizer/customizer-settings.php:852
 msgid "Scripts in site footer"
 msgstr "Scripts στο υποσέλιδο"
 
@@ -518,43 +499,33 @@ msgstr "Αποτελέσματα αναζήτησης για"
 msgid "Select Layout"
 msgstr "Επιλέξτε Διάταξη"
 
-#: inc/customizer/customizer-settings.php:325
+#: inc/customizer/customizer-settings.php:316
 msgid "Set up layout for site pages"
 msgstr "Ρυθμίστε τη διάταξη για τις σελίδες του site"
 
-#: inc/customizer/customizer-settings.php:655
+#: inc/customizer/customizer-settings.php:636
 msgid "Set your custom options to displaying posts"
 msgstr "Ορίσετε επιλογές για την εμφάνιση των άρθρων"
 
-#: inc/customizer/customizer-settings.php:861
-msgid "Setup advertisement before and after post content"
-msgstr "Ρύθμιση διαφήμισης, πριν και μετά το περιεχόμενου του άρθρου"
+#: inc/customizer/customizer-settings.php:744
+msgid ""
+"Setup advertisement banners or custom code before and after post content"
+msgstr ""
+"Εισάγετε διαφημίσεις, μπανερς ή άλλο περιεχόμενο πριν/μετά από το άρθρο"
 
-#: inc/hooks.php:159 inc/hooks.php:162 inc/hooks.php:163
-msgid "Share in"
-msgstr "Μοιραστείτε στο"
-
-#: inc/hooks.php:161
-msgid "Share in OK"
-msgstr "Μοιραστείτε στο OK"
-
-#: inc/hooks.php:160
-msgid "Share in VK"
-msgstr "Μοιραστείτε στο VK"
-
-#: inc/customizer/customizer-settings.php:363
+#: inc/customizer/customizer-settings.php:354
 msgid "Show featured images on mobile"
 msgstr "Εμφάνιση εικόνων εξωφύλου στο κινητό"
 
-#: inc/customizer/customizer-settings.php:345
+#: inc/customizer/customizer-settings.php:336
 msgid "Show sidebar on mobile"
 msgstr "Εμφάνιση πλαϊνής μπάρας στο κινητό"
 
-#: inc/customizer/customizer-settings.php:194
+#: inc/customizer/customizer-settings.php:185
 msgid "Show site description"
 msgstr "Εμφάνιση της περιγραφής του site"
 
-#: functions.php:108
+#: functions.php:103
 msgid "Sidebar"
 msgstr "Πλαϊνή μπάρα"
 
@@ -563,23 +534,15 @@ msgstr "Πλαϊνή μπάρα"
 msgid "Site title"
 msgstr "Τίτλος ιστοσελίδας"
 
-#: inc/customizer/customizer-settings.php:149
+#: inc/customizer/customizer-settings.php:147
 msgid "Site title in header"
 msgstr "Τίτλος ιστοσελίδας στην επικεφαλίδα"
 
-#: inc/customizer/customizer-settings.php:664
-msgid "Social"
-msgstr "Social"
+#: inc/customizer/customizer-settings.php:700
+msgid "Street 1, City, Country"
+msgstr "Οδός, Πόλη, Χώρα"
 
-#: inc/customizer/customizer-settings.php:665
-msgid "Social buttons"
-msgstr "Κουμπιά social"
-
-#: inc/customizer/customizer-settings.php:706
-msgid "Social share buttons after post"
-msgstr "Κουμπιά κοινοποίησης μετά το άρθρο"
-
-#: inc/customizer/customizer-settings.php:764
+#: inc/customizer/customizer-settings.php:647
 msgid "Structured Data"
 msgstr "Δομημένα Δεδομένα"
 
@@ -591,11 +554,7 @@ msgstr "Ετικέττα"
 msgid "Tags: "
 msgstr "Ετικέτες: "
 
-#: footer.php:41
-msgid "Theme by"
-msgstr "Θέμα από"
-
-#: inc/customizer/customizer-settings.php:145
+#: inc/customizer/customizer-settings.php:143
 msgid "This option not affect to other pages, for home blog page only."
 msgstr ""
 "Αυτή η επιλογή δεν επηρεάζει άλλες σελίδες, μόνο την αρχική σελίδα blog."
@@ -604,40 +563,36 @@ msgstr ""
 msgid "Title position"
 msgstr "Θέση τίτλου"
 
-#: inc/customizer/customizer-settings.php:805
-#: inc/customizer/customizer-settings.php:826
-#: inc/customizer/customizer-settings.php:850
+#: inc/customizer/customizer-settings.php:688
+#: inc/customizer/customizer-settings.php:709
+#: inc/customizer/customizer-settings.php:733
 msgid "use in https://schema.org/Organization"
 msgstr "χρησιμοποιείται στο https://schema.org/Organization"
 
-#: inc/customizer/customizer-settings.php:633
+#: inc/customizer/customizer-settings.php:617
 msgid "What meta information to display for posts"
 msgstr "Τι meta πληροφορίες να εμφανίζουμε στα άρθρα"
 
-#: inc/customizer/customizer-settings.php:516
+#: inc/customizer/customizer-settings.php:505
 msgid "WooCommerce Layout"
 msgstr "Διάταξη WooCommerce"
-
-#: inc/customizer/customizer-settings.php:712
-msgid "Yandex Buttons"
-msgstr "Κουμπιά Yandex"
 
 #: archive.php:25
 msgid "Year archives:"
 msgstr "Ετήσια αρχεία:"
 
-#: functions.php:189 inc/schemaorg.php:33
+#: functions.php:147 inc/schemaorg.php:32
 msgid "Your comment is awaiting moderation."
 msgstr "Το σχόλιό σας περιμένει έγκριση."
 
-#: inc/hooks.php:37
+#: inc/hooks.php:36
 msgid "Your E-mail"
 msgstr "Το E-mail σας"
 
-#: inc/hooks.php:35
+#: inc/hooks.php:34
 msgid "Your Name"
 msgstr "Το Όνομά σας"
 
-#: inc/hooks.php:39
+#: inc/hooks.php:38
 msgid "Your Website"
 msgstr "Η ιστοσελίδα σας"

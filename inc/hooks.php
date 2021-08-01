@@ -123,59 +123,9 @@ apply_filters( 'aperitto_singular_thumbnail_attr', 'aperitto_singular_thumbnail_
 /* ========================================================================== */
 
 
-/* ==========================================================================
- * add social button to the_content
- * ========================================================================== */
-function aperitto_social_share_buttons( $content ) {
-
-	$share_buttons = aperitto_get_theme_option( 'social_share', 'custom' );
-	$hide_on_pages = get_theme_mod( 'hide_socshare_on_pages', 0 );
-	$link_pages    = wp_link_pages( 'echo=0' );
-
-	if ( ! is_singular() || is_singular('product') || empty( $share_buttons ) || 'hide' == $share_buttons || ( is_page() && ! empty( $hide_on_pages ) ) ) {
-//		return $content;
-		return $content . $link_pages;
-	}
-
-	$soc_title = aperitto_get_theme_option( 'title_before_socshare' );
-	$soc_html  = "<div class='social_share clearfix'>";
-	$soc_html  .= "<p class='socshare-title'>$soc_title</p>";
-
-	switch ( $share_buttons ) {
-		case 'yandex':
-			$yandex_social_list  = apply_filters( 'aperitto_yandex_social_list', 'vkontakte,facebook,odnoklassniki,gplus,twitter' );
-			$yandex_show_counter = apply_filters( 'aperitto_yandex_show_counter', true );
-			$yandex_counter      = ( ! empty( $yandex_show_counter ) ) ? ' data-counter="" ' : '';
-			$soc_html            .= '<div class="ya-share2" data-services="' . $yandex_social_list . '"' . $yandex_counter . '></div>';
-			break;
-		case 'custom':
-		default:
-			$link     = get_permalink();
-			$title    = get_the_title();
-			$soc_html .= '
-			<a rel="nofollow" class="psb fb" target="_blank" href="http://www.facebook.com/sharer.php?u=' . $link . '&amp;t=' . urlencode( $title ) . '&amp;src=sp" title="' . __( 'Share in', 'aperitto' ) . ' Facebook"></a>
-			<a rel="nofollow" class="psb vk" target="_blank" href="http://vkontakte.ru/share.php?url=' . $link . '" title="' . __( 'Share in VK', 'aperitto' ) . '"></a>
-			<a rel="nofollow" class="psb ok" target="_blank" href="https://connect.ok.ru/offer?url=' . $link . '&amp;title=' . urlencode( $title ) . '" title="' . __( 'Share in OK', 'aperitto' ) . '"></a>
-			<a rel="nofollow" class="psb gp" target="_blank" href="https://plus.google.com/share?url=' . $link . '"  title="' . __( 'Share in', 'aperitto' ) . ' Google+"></a>
-			<a rel="nofollow" class="psb tw" target="_blank" href="http://twitter.com/share?url=' . $link . '&amp;text=' . urlencode( $title ) . '" title="' . __( 'Share in', 'aperitto' ) . ' Twitter"></a>
-			';
-			break;
-	}
-	$soc_html .= "</div>";
-
-	$fitered_soc_html = apply_filters( 'aperitto_social_share', $soc_html );
-
-//	return $content . $fitered_soc_html;
-	return $content . $link_pages . $fitered_soc_html;
-
-}
-
-add_action( 'the_content', 'aperitto_social_share_buttons', 10 );
-/* ========================================================================== */
-
 
 /* ========================================================================== *
- *
+ * Wrap content with entry class
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_the_content_entry' ) ) :
 	function aperitto_the_content_entry( $content ) {
@@ -189,7 +139,7 @@ add_action( 'the_content', 'aperitto_the_content_entry', 1 );
 
 
 /* ==========================================================================
- * add social button to the_content
+ * add advertisiment banners or custom code to the_content
  * ========================================================================== */
 function aperitto_content_custom_codes_div( $content ) {
 

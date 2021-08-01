@@ -238,17 +238,6 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
-	// title_before_socshare
-	wp.customize( optname + '[title_before_socshare]', function (value) {
-		value.bind(function (to) {
-			var $block = $('.socshare-title');
-			if (!$block.length) {
-				$('social_share').prepend('<p class="socshare-title"></p>');
-			}
-			$block.text(to);
-		});
-	});
-
 
 	// custom html before_content
 	wp.customize( optname + '[before_content]', function (value) {

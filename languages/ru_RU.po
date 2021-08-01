@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aperitto\n"
 "POT-Creation-Date: 2019-07-25 12:55+0300\n"
-"PO-Revision-Date: 2021-07-28 20:04+0000\n"
+"PO-Revision-Date: 2021-08-01 21:29+0000\n"
 "Last-Translator: George Pattihis <gpattihis@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: img\n"
 "X-Poedit-SearchPathExcluded-1: js\n"
 
-#: functions.php:182 inc/schemaorg.php:26
+#: functions.php:140 inc/schemaorg.php:25
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
@@ -32,35 +32,31 @@ msgstr "&laquo; Назад"
 msgid "&larr; Older Comments"
 msgstr "&larr; Предыдущие"
 
-#: inc/customizer/customizer-settings.php:685
-msgid "Add Open Graph tags to &lt;head&gt;"
-msgstr "Добавить теги Open Graph в &lt;head&gt;"
+#: inc/customizer/customizer-settings.php:743
+msgid "Ad Banners"
+msgstr ""
 
 #: inc/woo-hooks.php:17
 msgid "Add to Cart"
 msgstr "В корзину"
 
-#: functions.php:110
+#: functions.php:105
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Добавьте сюда виджеты, чтобы вывести их в боковой колонке"
 
-#: inc/customizer/customizer-settings.php:1003
+#: inc/customizer/customizer-settings.php:886
 msgid "Add your custom CSS styles"
 msgstr "Добавьте свои CSS стили"
 
-#: inc/customizer/customizer-settings.php:825
+#: inc/customizer/customizer-settings.php:708
 msgid "Address"
 msgstr "Адресс"
 
-#: inc/customizer/customizer-settings.php:860
-msgid "Advertisement"
-msgstr "Реклама"
-
-#: inc/customizer/customizer-settings.php:901
+#: inc/customizer/customizer-settings.php:784
 msgid "After content"
 msgstr "После текста"
 
-#: inc/customizer/customizer-settings.php:1028
+#: inc/customizer/customizer-settings.php:911
 msgid "All rights reserved"
 msgstr "Все права защищены"
 
@@ -70,15 +66,19 @@ msgstr ""
 
 #. Description of the theme
 msgid ""
-"Aperitto is fully responsive, clean and minimal WordPress theme. It has "
-"various options in WordPress Customizer to change look of the theme - "
-"primary design color, background and header, page layout (left or right "
-"sidebar, full or centered content). Clean valid code, semantic markup, "
-"markup by Schema.org, full adaptation to mobile devices. Aperitto is ready "
-"to use with child themes and gives for developers simple design change with "
-"custom hooks and action. Translation Ready (English, Greek, Russian, "
-"Ukrainian, French, German, Polish, Turkish). Fully compatible with WPML, "
-"WooCommerce, bbPress."
+"Aperitto is a clean, simple, minimal and responsive WordPress theme.  The "
+"clean typography and spacious white layout make it great for any project. "
+"The user friendly customization options will get your site up and running in "
+"minutes. It features custom color options, customized layouts (left or right "
+"sidebar, full-width or centered content). Simple structured data mark-up, "
+"clean, valid and SEO-friendly code. Aperitto is ready to be used with child "
+"themes and is is developer-friendly with custom filters, hooks and actions. "
+"Fully compatible with WPML, WooCommerce and bbPress. Also, translation ready "
+"with English, Greek, Russian, Ukrainian, French, German, Polish included."
+msgstr ""
+
+#: footer.php:39
+msgid "Aperitto Theme"
 msgstr ""
 
 #: archive.php:30
@@ -89,27 +89,27 @@ msgstr "Архивы блога"
 msgid "Author archives"
 msgstr "Архивы автора"
 
-#: inc/customizer/customizer-settings.php:273
+#: inc/customizer/customizer-settings.php:264
 msgid "Background"
 msgstr "Фон"
 
-#: inc/customizer/customizer-settings.php:242
+#: inc/customizer/customizer-settings.php:233
 msgid "Background with full repeat"
 msgstr "Фоном, полностью замостить"
 
-#: inc/customizer/customizer-settings.php:243
+#: inc/customizer/customizer-settings.php:234
 msgid "Background with horizontal repeat"
 msgstr "Фоном, с повторением по горизонтали"
 
-#: inc/customizer/customizer-settings.php:244
+#: inc/customizer/customizer-settings.php:235
 msgid "Background with vertical repeat"
 msgstr "Фоном, с повторением по вертикали"
 
-#: inc/customizer/customizer-settings.php:241
+#: inc/customizer/customizer-settings.php:232
 msgid "Background without repeat"
 msgstr "Фоном без повторения"
 
-#: inc/customizer/customizer-settings.php:880
+#: inc/customizer/customizer-settings.php:763
 msgid "Before content"
 msgstr "Перед тестом"
 
@@ -117,7 +117,7 @@ msgstr "Перед тестом"
 msgid "Blog home page H1"
 msgstr "H1 для главной страницы блога"
 
-#: sidebar.php:23
+#: sidebar.php:22
 msgid "Categories"
 msgstr "Рубрики"
 
@@ -129,26 +129,28 @@ msgstr "Рубрика"
 msgid "Center"
 msgstr "По центру"
 
-#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:391
-#: inc/customizer/customizer-settings.php:417
-#: inc/customizer/customizer-settings.php:444
-#: inc/customizer/customizer-settings.php:471
-#: inc/customizer/customizer-settings.php:500
-#: inc/customizer/customizer-settings.php:543
-#: inc/customizer/customizer-settings.php:568
-#: inc/customizer/customizer-settings.php:593
+#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:381
+#: inc/customizer/customizer-settings.php:407
+#: inc/customizer/customizer-settings.php:433
+#: inc/customizer/customizer-settings.php:460
+#: inc/customizer/customizer-settings.php:489
+#: inc/customizer/customizer-settings.php:530
+#: inc/customizer/customizer-settings.php:554
+#: inc/customizer/customizer-settings.php:578
 msgid "Centered Content"
 msgstr "По центру"
 
-#: inc/customizer/customizer-settings.php:310
+#: inc/customizer/customizer-settings.php:301
 msgid "Choose main color"
 msgstr "Выберите основной цвет"
 
-#: inc/customizer/customizer-settings.php:902
+#: inc/customizer/customizer-settings.php:776
+#: inc/customizer/customizer-settings.php:785
 msgid "Code after single post content"
 msgstr "Код после текста статьи"
 
-#: inc/customizer/customizer-settings.php:881
+#: inc/customizer/customizer-settings.php:755
+#: inc/customizer/customizer-settings.php:764
 msgid "Code before single post content"
 msgstr "Код перед текстом статьи"
 
@@ -156,43 +158,35 @@ msgstr "Код перед текстом статьи"
 msgid "Comments"
 msgstr "Комментарии"
 
-#: inc/customizer/customizer-settings.php:639
+#: inc/customizer/customizer-settings.php:623
 msgid "Comments count"
 msgstr "Комментарии"
 
-#: inc/customizer/customizer-settings.php:1036
+#: inc/customizer/customizer-settings.php:919
 msgid "Copyright text"
 msgstr "Текст авторского копирайта"
 
-#: inc/customizer/customizer-settings.php:1056
+#: inc/customizer/customizer-settings.php:939
 msgid "Counters code"
 msgstr "Счетчики"
 
-#: inc/customizer/customizer-settings.php:171
+#: inc/customizer/customizer-settings.php:167
 msgid "Custom blog home H1"
 msgstr "H1 для главной страницы блога"
 
-#: inc/customizer/customizer-settings.php:913
+#: inc/customizer/customizer-settings.php:796
 msgid "Custom codes"
 msgstr "Пользовательский код"
 
-#: inc/customizer/customizer-settings.php:982
+#: inc/customizer/customizer-settings.php:865
 msgid "Custom CSS"
 msgstr "CSS стили"
 
-#: inc/customizer/customizer-settings.php:1002
+#: inc/customizer/customizer-settings.php:885
 msgid "Custom styles"
 msgstr "Пользовательские стили"
 
-#: inc/customizer/customizer-settings.php:732
-msgid "Custom text before share buttons"
-msgstr "Текст до кнопок соцсетей"
-
-#: inc/customizer/customizer-settings.php:711
-msgid "Custom theme buttons"
-msgstr "Стандартные кнопки (от разработчиков темы)"
-
-#: inc/customizer/customizer-settings.php:1017
+#: inc/customizer/customizer-settings.php:900
 msgid "Customize footer"
 msgstr "Настройка подвала"
 
@@ -208,7 +202,7 @@ msgstr "По-умолчанию"
 msgid "Description"
 msgstr "Описание"
 
-#: inc/customizer/customizer-settings.php:288
+#: inc/customizer/customizer-settings.php:279
 msgid "Design"
 msgstr "Оформление"
 
@@ -216,35 +210,35 @@ msgstr "Оформление"
 msgid "Display logo image with site title"
 msgstr "Как показывать логотип и название сайта"
 
-#: functions.php:185 inc/schemaorg.php:29
+#: functions.php:143 inc/schemaorg.php:28
 msgid "Edit"
 msgstr "Редактировать"
 
-#: inc/customizer/customizer-settings.php:784
+#: inc/customizer/customizer-settings.php:667
 msgid "Enable Schema.org mark up according CreativeWork->Article and Comment"
 msgstr ""
 "Активировать разметку Schema.org по схеме CreativeWork->Article и Comment"
 
-#: inc/customizer/customizer-settings.php:263
+#: inc/customizer/customizer-settings.php:254
 msgid "Fit minimal header height to image height"
 msgstr "Установить минимальную высоту шапки такой же, как высота изображения"
 
-#: inc/customizer/customizer-settings.php:1016
+#: inc/customizer/customizer-settings.php:899
 msgid "Footer"
 msgstr "Подвал"
 
-#: functions.php:35
+#: functions.php:39
 msgid "Footer Menu"
 msgstr "Меню в подвале"
 
-#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:390
-#: inc/customizer/customizer-settings.php:416
-#: inc/customizer/customizer-settings.php:443
-#: inc/customizer/customizer-settings.php:470
-#: inc/customizer/customizer-settings.php:499
-#: inc/customizer/customizer-settings.php:542
-#: inc/customizer/customizer-settings.php:567
-#: inc/customizer/customizer-settings.php:592
+#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:380
+#: inc/customizer/customizer-settings.php:406
+#: inc/customizer/customizer-settings.php:432
+#: inc/customizer/customizer-settings.php:459
+#: inc/customizer/customizer-settings.php:488
+#: inc/customizer/customizer-settings.php:529
+#: inc/customizer/customizer-settings.php:553
+#: inc/customizer/customizer-settings.php:577
 msgid "Fullwidth Content"
 msgstr "На всю ширину"
 
@@ -252,64 +246,55 @@ msgstr "На всю ширину"
 msgid "George Pattihis"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:492
+#: inc/customizer/customizer-settings.php:481
 msgid "Global layout"
 msgstr "Структура по-умолчанию"
 
-#: inc/customizer/customizer-settings.php:928
+#: inc/customizer/customizer-settings.php:811
 msgid "Global settings"
 msgstr "Общие настройки"
 
-#: footer.php:42
-msgid "GP Media"
-msgstr "GP Media"
-
-#: inc/customizer/customizer-settings.php:710
-msgid "Hide"
-msgstr "Скрыть"
-
-#: inc/customizer/customizer-settings.php:752
-msgid "Hide share buttons on static pages"
-msgstr "Скрыть кнопки соцсетей на статических страницах"
-
-#: header.php:79 header.php:82
+#: header.php:81 header.php:84
 msgid "Home"
 msgstr "Главная"
 
-#: inc/customizer/customizer-settings.php:144
+#: inc/customizer/customizer-settings.php:142
 msgid "Home H1 position"
 msgstr "Позиция H1 на главной странице"
 
-#: inc/customizer/customizer-settings.php:235
+#: inc/customizer/customizer-settings.php:226
 msgid "How to display image"
 msgstr "Как вывести изображение заголовка"
 
-#: inc/customizer/customizer-settings.php:970
+#: inc/customizer/customizer-settings.php:853
 msgid "HTML code before &lt;/body&gt; tag"
 msgstr "HTML код перед &lt;/body&gt; теге"
 
-#: inc/customizer/customizer-settings.php:949
+#: inc/customizer/customizer-settings.php:832
 msgid "HTML code in &lt;head&gt; tag"
 msgstr "HTML код  в &lt;head&gt; теге"
 
-#. URI of the theme
 #. Author URI of the theme
-msgid "https://profiles.wordpress.org/pattihis/"
+msgid "https://wordpress.org/support/users/pattihis/"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:240
+#. URI of the theme
+msgid "https://wordpress.org/themes/aperitto/"
+msgstr ""
+
+#: inc/customizer/customizer-settings.php:231
 msgid "Image after site title"
 msgstr "Изображение после названия сайта"
 
-#: inc/customizer/customizer-settings.php:239
+#: inc/customizer/customizer-settings.php:230
 msgid "Image before site title"
 msgstr "Изображение до названия сайта"
 
-#: inc/customizer/customizer-settings.php:914
+#: inc/customizer/customizer-settings.php:797
 msgid "It helps you to setup custom scripts and styles"
 msgstr "Данные опции помогут вам установить пользовательские стили и скрипты"
 
-#: inc/customizer/customizer-settings.php:493
+#: inc/customizer/customizer-settings.php:482
 msgid "It is used when individual page layout is not set"
 msgstr "Используется, если не установлена индивидуальная структура страницы"
 
@@ -318,35 +303,35 @@ msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 "По данному адресу ничего не найдено. Попробуйте воспользоваться поиском."
 
-#: inc/customizer/customizer-settings.php:324
+#: inc/customizer/customizer-settings.php:315
 msgid "Layout"
 msgstr "Структура"
 
-#: inc/customizer/customizer-settings.php:383
+#: inc/customizer/customizer-settings.php:374
 msgid "Layout on Home"
 msgstr "Структура главной"
 
-#: inc/customizer/customizer-settings.php:436
+#: inc/customizer/customizer-settings.php:426
 msgid "Layout on Page"
 msgstr "Структура страниц (Page)"
 
-#: inc/customizer/customizer-settings.php:410
+#: inc/customizer/customizer-settings.php:400
 msgid "Layout on Post"
 msgstr "Структура записей (Post)"
 
-#: inc/customizer/customizer-settings.php:464
+#: inc/customizer/customizer-settings.php:453
 msgid "Layout on Search results page"
 msgstr "Структура на странице результатов поиска"
 
-#: inc/customizer/customizer-settings.php:561
+#: inc/customizer/customizer-settings.php:547
 msgid "Layout on WooCommerce Product page"
 msgstr "Структура для товаров WooCommerce"
 
-#: inc/customizer/customizer-settings.php:586
+#: inc/customizer/customizer-settings.php:571
 msgid "Layout on WooCommerce Product's category"
 msgstr "Структура на категорий товаров WooCommerce"
 
-#: inc/customizer/customizer-settings.php:536
+#: inc/customizer/customizer-settings.php:523
 msgid "Layout on WooCommerce Shop page"
 msgstr "Структура на странице магазина WooCommerce"
 
@@ -354,34 +339,30 @@ msgstr "Структура на странице магазина WooCommerce"
 msgid "Left"
 msgstr "Слева"
 
-#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:389
-#: inc/customizer/customizer-settings.php:415
-#: inc/customizer/customizer-settings.php:442
-#: inc/customizer/customizer-settings.php:469
-#: inc/customizer/customizer-settings.php:498
-#: inc/customizer/customizer-settings.php:541
-#: inc/customizer/customizer-settings.php:566
-#: inc/customizer/customizer-settings.php:591
+#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:379
+#: inc/customizer/customizer-settings.php:405
+#: inc/customizer/customizer-settings.php:431
+#: inc/customizer/customizer-settings.php:458
+#: inc/customizer/customizer-settings.php:487
+#: inc/customizer/customizer-settings.php:528
+#: inc/customizer/customizer-settings.php:552
+#: inc/customizer/customizer-settings.php:576
 msgid "Leftbar"
 msgstr "Левая колонка"
 
-#: inc/customizer/customizer-settings.php:309
+#: inc/customizer/customizer-settings.php:300
 msgid "Main color"
 msgstr "Основной цвет"
 
-#: functions.php:34
+#: functions.php:38
 msgid "Main Menu"
 msgstr "Главное меню"
 
-#: inc/customizer/customizer-settings.php:290
+#: inc/customizer/customizer-settings.php:281
 msgid "Main theme options"
 msgstr "Главные настройки темы"
 
-#: header.php:66
-msgid "Menu"
-msgstr "Меню"
-
-#: inc/hooks.php:46
+#: inc/hooks.php:45
 msgid "Message"
 msgstr "Сообщение"
 
@@ -389,7 +370,7 @@ msgstr "Сообщение"
 msgid "Monthly archives:"
 msgstr "Архивы за месяц"
 
-#: inc/customizer/customizer-settings.php:150
+#: inc/customizer/customizer-settings.php:148
 msgid "My custom title before posts"
 msgstr "Мой заголовок перед записями"
 
@@ -413,15 +394,15 @@ msgstr "Только картинка, без названия сайта"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ой! Страница не найдена."
 
-#: inc/customizer/customizer-settings.php:210
+#: inc/customizer/customizer-settings.php:201
 msgid "Other"
 msgstr "Другое"
 
-#: inc/customizer/customizer-settings.php:611
+#: inc/customizer/customizer-settings.php:595
 msgid "Other options"
 msgstr "Другие опции"
 
-#: inc/customizer/customizer-settings.php:804
+#: inc/customizer/customizer-settings.php:687
 msgid "Phone"
 msgstr "Телефон"
 
@@ -441,23 +422,23 @@ msgstr "Картинка справа от названия"
 msgid "Picture under the text"
 msgstr "Картинка под названием"
 
-#: inc/customizer/customizer-settings.php:654
+#: inc/customizer/customizer-settings.php:635
 msgid "Post"
 msgstr "Запись"
 
-#: inc/customizer/customizer-settings.php:637
+#: inc/customizer/customizer-settings.php:621
 msgid "Post author"
 msgstr "Автор записи"
 
-#: inc/customizer/customizer-settings.php:638
+#: inc/customizer/customizer-settings.php:622
 msgid "Post categories"
 msgstr "Рубрики"
 
-#: inc/customizer/customizer-settings.php:632
+#: inc/customizer/customizer-settings.php:616
 msgid "Post meta"
 msgstr "Мета данные записи"
 
-#: inc/customizer/customizer-settings.php:640
+#: inc/customizer/customizer-settings.php:624
 msgid "Post tags"
 msgstr "Метки"
 
@@ -465,11 +446,15 @@ msgstr "Метки"
 msgid "Posts not found"
 msgstr "Записей не найдено"
 
-#: inc/customizer/customizer-settings.php:636
+#: footer.php:38
+msgid "Powered by"
+msgstr ""
+
+#: inc/customizer/customizer-settings.php:620
 msgid "Publication date"
 msgstr "Дата публикации"
 
-#: inc/customizer/customizer-settings.php:849
+#: inc/customizer/customizer-settings.php:732
 msgid "Publisher logo"
 msgstr "Логитип издателя"
 
@@ -481,33 +466,29 @@ msgstr "Читать далее"
 msgid "Right"
 msgstr "Справа"
 
-#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:388
-#: inc/customizer/customizer-settings.php:414
-#: inc/customizer/customizer-settings.php:441
-#: inc/customizer/customizer-settings.php:468
-#: inc/customizer/customizer-settings.php:497
-#: inc/customizer/customizer-settings.php:540
-#: inc/customizer/customizer-settings.php:565
-#: inc/customizer/customizer-settings.php:590
+#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:378
+#: inc/customizer/customizer-settings.php:404
+#: inc/customizer/customizer-settings.php:430
+#: inc/customizer/customizer-settings.php:457
+#: inc/customizer/customizer-settings.php:486
+#: inc/customizer/customizer-settings.php:527
+#: inc/customizer/customizer-settings.php:551
+#: inc/customizer/customizer-settings.php:575
 msgid "Rightbar"
 msgstr "Правая колонка"
 
-#: inc/customizer/customizer-settings.php:817
-msgid "Russia"
-msgstr "Россия"
-
-#: inc/hooks.php:43
+#: inc/hooks.php:42
 msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 "Сохраните моё имя, email и адрес сайта в этом браузере для последующих моих "
 "комментариев."
 
-#: inc/customizer/customizer-settings.php:948
+#: inc/customizer/customizer-settings.php:831
 msgid "Scripts in header"
 msgstr "Скрипты в хедере"
 
-#: inc/customizer/customizer-settings.php:969
+#: inc/customizer/customizer-settings.php:852
 msgid "Scripts in site footer"
 msgstr "Скрипты в подвале сайта"
 
@@ -523,43 +504,32 @@ msgstr "Результаты поиска по фразе"
 msgid "Select Layout"
 msgstr "Выберите структуру"
 
-#: inc/customizer/customizer-settings.php:325
+#: inc/customizer/customizer-settings.php:316
 msgid "Set up layout for site pages"
 msgstr "Настройте структуру для страниц сайта"
 
-#: inc/customizer/customizer-settings.php:655
+#: inc/customizer/customizer-settings.php:636
 msgid "Set your custom options to displaying posts"
 msgstr "Настройте дополнительные опции отображения записей"
 
-#: inc/customizer/customizer-settings.php:861
-msgid "Setup advertisement before and after post content"
-msgstr "Настройте рекламные блоки перед и после текста записи"
+#: inc/customizer/customizer-settings.php:744
+msgid ""
+"Setup advertisement banners or custom code before and after post content"
+msgstr ""
 
-#: inc/hooks.php:159 inc/hooks.php:162 inc/hooks.php:163
-msgid "Share in"
-msgstr "Поделиться в"
-
-#: inc/hooks.php:161
-msgid "Share in OK"
-msgstr "Поделиться в Одноклассниках"
-
-#: inc/hooks.php:160
-msgid "Share in VK"
-msgstr "Поделиться во ВКонтакте"
-
-#: inc/customizer/customizer-settings.php:363
+#: inc/customizer/customizer-settings.php:354
 msgid "Show featured images on mobile"
 msgstr "Показать миниатюру записи на мобильных"
 
-#: inc/customizer/customizer-settings.php:345
+#: inc/customizer/customizer-settings.php:336
 msgid "Show sidebar on mobile"
 msgstr "Показать сайдбар на мобильных"
 
-#: inc/customizer/customizer-settings.php:194
+#: inc/customizer/customizer-settings.php:185
 msgid "Show site description"
 msgstr "Показать описание сайта"
 
-#: functions.php:108
+#: functions.php:103
 msgid "Sidebar"
 msgstr "Боковая колонка"
 
@@ -568,23 +538,15 @@ msgstr "Боковая колонка"
 msgid "Site title"
 msgstr "Заголовок сайта"
 
-#: inc/customizer/customizer-settings.php:149
+#: inc/customizer/customizer-settings.php:147
 msgid "Site title in header"
 msgstr "Заголовок сайта в заголовке"
 
-#: inc/customizer/customizer-settings.php:664
-msgid "Social"
-msgstr "Соцсети"
+#: inc/customizer/customizer-settings.php:700
+msgid "Street 1, City, Country"
+msgstr ""
 
-#: inc/customizer/customizer-settings.php:665
-msgid "Social buttons"
-msgstr "Кнопки соцсетей"
-
-#: inc/customizer/customizer-settings.php:706
-msgid "Social share buttons after post"
-msgstr "Кнопки поделиться в соцсетях"
-
-#: inc/customizer/customizer-settings.php:764
+#: inc/customizer/customizer-settings.php:647
 msgid "Structured Data"
 msgstr "Микроразметка"
 
@@ -596,11 +558,7 @@ msgstr "Записи с меткой"
 msgid "Tags: "
 msgstr "Метки: "
 
-#: footer.php:41
-msgid "Theme by"
-msgstr "Шаблон от"
-
-#: inc/customizer/customizer-settings.php:145
+#: inc/customizer/customizer-settings.php:143
 msgid "This option not affect to other pages, for home blog page only."
 msgstr ""
 "Этот параметр не влияет на другие страницы, только для домашней страницы "
@@ -610,40 +568,36 @@ msgstr ""
 msgid "Title position"
 msgstr "Позиция заголовка сайта"
 
-#: inc/customizer/customizer-settings.php:805
-#: inc/customizer/customizer-settings.php:826
-#: inc/customizer/customizer-settings.php:850
+#: inc/customizer/customizer-settings.php:688
+#: inc/customizer/customizer-settings.php:709
+#: inc/customizer/customizer-settings.php:733
 msgid "use in https://schema.org/Organization"
 msgstr "используется в схеме https://schema.org/Organization"
 
-#: inc/customizer/customizer-settings.php:633
+#: inc/customizer/customizer-settings.php:617
 msgid "What meta information to display for posts"
 msgstr "Какие данные о статье показывать"
 
-#: inc/customizer/customizer-settings.php:516
+#: inc/customizer/customizer-settings.php:505
 msgid "WooCommerce Layout"
 msgstr "Структура WooCommerce"
-
-#: inc/customizer/customizer-settings.php:712
-msgid "Yandex Buttons"
-msgstr "Кнопки Yandex"
 
 #: archive.php:25
 msgid "Year archives:"
 msgstr "Архивы за год"
 
-#: functions.php:189 inc/schemaorg.php:33
+#: functions.php:147 inc/schemaorg.php:32
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает модерации."
 
-#: inc/hooks.php:37
+#: inc/hooks.php:36
 msgid "Your E-mail"
 msgstr "Ваш E-mail"
 
-#: inc/hooks.php:35
+#: inc/hooks.php:34
 msgid "Your Name"
 msgstr "Ваше имя"
 
-#: inc/hooks.php:39
+#: inc/hooks.php:38
 msgid "Your Website"
 msgstr "Ваш Вебсайт"
