@@ -57,6 +57,15 @@ $markup = ( is_single() && ( $markup_opt || false === $markup_opt ) ) ? true : f
 			the_content( '' );
 			do_action( 'aperitto_after_single_content' );
 
+			wp_link_pages(
+				array(
+					'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
+					'after'    => '</nav>',
+					/* translators: %: Page number. */
+					'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
+				)
+			);
+
 		} ?>
 
 	</div> <?php
