@@ -239,6 +239,16 @@ button:hover,
 	display: block; padding: 15px 20px; color: #fff; line-height: 20px;
 	font-weight: 500; text-decoration: none; position: relative; cursor: pointer;
 }
+.top-menu li a:focus,
+.top-menu li span:focus,
+.top-menu li .sub-menu > li > a:focus,
+.top-menu li .sub-menu > li > span:focus,
+.top-menu li a:focus-within,
+.top-menu li span:focus-within,
+.top-menu li .sub-menu > li > a:focus-within,
+.top-menu li .sub-menu > li > span:focus-within  {
+	text-decoration: underline dotted #fff;
+}
 .top-menu li a:hover,
 .top-menu li span:hover,
 .top-menu li .sub-menu > li > a:hover,
@@ -621,13 +631,35 @@ li.bbp-topic-freshness {
 	.top-menu li { display: inline-block; position: relative; }
 	.top-menu li a { border-bottom: 0; font-weight: normal; color: #fff; -webkit-transition: background 0.3s; transition: background 0.3s; }
 	.top-menu > li:hover > a { background: rgba(255,255,255,0.3);  }
-	.top-menu .sub-menu, .top-menu .children { display: none; margin: 0; position: absolute; top: 100%; left: 0; background: #137dad; width: 250px; z-index: 1000;  box-shadow: 3px 3px 0 rgba(0,0,0,0.1); }
+	.top-menu .sub-menu, .top-menu .children {
+		margin: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: #137dad;
+		width: 250px;
+		z-index: 1000;
+		box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+		visibility: hidden;
+		transform: rotateX(-90deg) translateX(-10%);
+		transform-origin: top center;
+		opacity: 0.3;
+		transition: 280ms all 120ms ease-out;
+	}
 	.top-menu .sub-menu li, .top-menu .children li { display: block; text-align: left;}
 	.top-menu .sub-menu li a, .top-menu .children li a { color: #fff; border-top: 1px solid rgba(255,255,255,0.2); }
 	.top-menu li:hover > .sub-menu,
-	.top-menu li:hover > .children { display: block; }
+	.top-menu li:hover > .children,
+	.top-menu li:focus > .sub-menu,
+	.top-menu li:focus > .children,
+	.top-menu li:focus-within > .sub-menu,
+	.top-menu li:focus-within > .children {
+		opacity: 1;
+		transform: rotateX(0) translateX(0%);
+		visibility: visible;
+	}
 	.top-menu .sub-menu .sub-menu,
-	.top-menu .children .children { display: none; top: 0; left: 100%; padding: 0; border-top: 0; border-left: 3px solid #fff; }
+	.top-menu .children .children {top: 0; left: 100%; border-left: 2px solid #fff;}
 	.top-menu .sub-menu li:hover > .sub-menu,
 	.top-menu .children li:hover > .children { display: block; }
 	.top-menu .menu-item-has-children > a:after, .top-menu .menu-item-has-children > span:after,

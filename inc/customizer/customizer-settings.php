@@ -15,7 +15,7 @@ function aperitto_customizer_init( $wp_customize ) {
 	/* --------------  S I T E   T I T L E   ---------------- */
 
 	// rename title setting
-	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site title', 'aperitto' );
+	$wp_customize->get_section( 'title_tagline' )->title = __( 'Header Logo/Title', 'aperitto' );
 	$wp_customize->remove_control( 'display_header_text' );
 
 
@@ -31,7 +31,7 @@ function aperitto_customizer_init( $wp_customize ) {
 	$wp_customize->add_control( 'display_logo_and_title_control',
 		array(
 			'settings' => 'display_logo_and_title',
-			'label'    => __( "Display logo image with site title", 'aperitto' ),
+			'label'    => __( "Logo image display options", 'aperitto' ),
 			'section'  => 'title_tagline',
 			'type'     => 'select',
 			'choices'  => array(
@@ -261,7 +261,7 @@ function aperitto_customizer_init( $wp_customize ) {
 
 	/*----------  C O L O R S   &&   B A C K G R O U N D  ----------*/
 
-	$wp_customize->get_section( 'background_image' )->title = __( 'Background', 'aperitto' );
+	$wp_customize->get_section( 'background_image' )->title = __( 'Site Background', 'aperitto' );
 
 	$wp_customize->get_control( 'background_color' )->priority = 30;
 	$wp_customize->get_control( 'background_image' )->priority = 30;
@@ -276,7 +276,7 @@ function aperitto_customizer_init( $wp_customize ) {
 	$wp_customize->add_section(
 		'layout',
 		array(
-			'title'       => __( 'Design', 'aperitto' ),
+			'title'       => __( 'Color & Layout', 'aperitto' ),
 			'priority'    => 80,
 			'description' => __( 'Main theme options', 'aperitto' )
 		)
@@ -632,7 +632,7 @@ function aperitto_customizer_init( $wp_customize ) {
 
 	$wp_customize->add_panel( 'aperitto_single_options',
 		array(
-			'title'       => __( "Post", 'aperitto' ),
+			'title'       => __( "Post Options", 'aperitto' ),
 			'description' => __( "Set your custom options to displaying posts", 'aperitto' ),
 			'priority'    => 81
 		)
@@ -793,7 +793,7 @@ function aperitto_customizer_init( $wp_customize ) {
 
 	$wp_customize->add_section( 'aperitto_custom_code',
 		array(
-			'title'       => __( 'Custom codes', 'aperitto' ),
+			'title'       => __( 'Custom Scripts', 'aperitto' ),
 			'description' => __( 'It helps you to setup custom scripts and styles', 'aperitto' ),
 			'priority'    => 91,
 		)

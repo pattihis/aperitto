@@ -176,7 +176,7 @@ if ( ! function_exists( 'aperitto_customizer_live' ) ):
 			get_template_directory_uri() . '/inc/customizer/assets/customizer-preview.js', // URL
 			array( 'jquery', 'customize-preview' ), null, true
 		);
-		wp_localize_script( 'aperitto-customizer-js', 'optname', APERITTO_OPTION );
+		wp_localize_script( 'aperitto-customizer-js', 'optname', [APERITTO_OPTION]);
 
 	}
 endif;
