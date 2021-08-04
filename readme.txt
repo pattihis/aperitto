@@ -27,6 +27,14 @@ Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean 
 
 == Changelog ==
 
+= 1.0.2 =
+* Resolve Warnings/Notices about text-domain and wp_localize_script
+* Improve Menus to be accessible with keyboards (tab/arrow keys navigation)
+* Visual focus highlighting for links/buttons/inputs
+* Skip-Link Added
+* Self Hosted Fonts
+* Include unminified version of https://github.com/aFarkas/html5shiv
+
 = 1.0.1 =
 * Remove Social Share Buttons options
 * Remove author's footer link
