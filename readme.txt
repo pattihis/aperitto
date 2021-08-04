@@ -3,8 +3,8 @@ Contributors: pattihis
 Requires at least: WordPress 5.0
 Tested up to: WordPress 5.8
 Version: 1.0.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3.0
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
 
 
@@ -52,12 +52,12 @@ Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean 
 
 == Copyright ==
 
-Aperitto WordPress Theme, Copyright 2014-2015 WordPress.org
-Aperitto theme files, scripts, icons and images is distributed under the terms of the GNU GPL
+Aperitto WordPress Theme, Copyright 2021
+Aperitto theme files, scripts, icons and images are distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
+the Free Software Foundation, version 3 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
@@ -67,7 +67,18 @@ GNU General Public License for more details.
 
 Aperitto Theme bundles the following third-party resources:
 
-Script HTML5 Shiv v3.7.0, Copyright 2014 Alexander Farkas
+Script
+HTML5 Shiv v3.7.0, Copyright 2014 Alexander Farkas
 License: MIT/GPL2
 Source: https://github.com/aFarkas/html5shiv
+
+Font Roboto
+Source: https://fonts.google.com/specimen/Roboto
+License: Apache License, version 2.0
+License URI: http://www.apache.org/licenses/LICENSE-2.0.html
+
+Font Fira Sans Extra Condensed
+Source: https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
+License: Open Font License (OFL)
+License URI: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 

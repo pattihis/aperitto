@@ -30,18 +30,18 @@ function aperitto_comment_form_defaults( $args ) {
 	$consent   = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
 
 	$fields                = apply_filters( 'aperitto_comment_form_defaults', array(
-		'author'  => '<div class="rinput rauthor"><input type="text" placeholder="' . __( 'Your Name', 'aperitto' ) . '" name="author" id="author" class="required" value="'
+		'author'  => '<div class="rinput rauthor"><input type="text" placeholder="' . esc_attr__( 'Your Name', 'aperitto' ) . '" name="author" id="author" class="required" value="'
 		             . esc_attr( $commenter['comment_author'] ) . '" /></div>',
-		'email'   => '<div class="rinput remail"><input type="text" placeholder="' . __( 'Your E-mail', 'aperitto' ) . '" name="email" id="email" class="required" value="'
+		'email'   => '<div class="rinput remail"><input type="text" placeholder="' . esc_attr__( 'Your E-mail', 'aperitto' ) . '" name="email" id="email" class="required" value="'
 		             . esc_attr( $commenter['comment_author_email'] ) . '" /></div>',
-		'url'     => '<div class="rinput rurl"><input type="text" placeholder="' . __( 'Your Website', 'aperitto' ) . '" name="url" id="url" class="last-child" value="'
+		'url'     => '<div class="rinput rurl"><input type="text" placeholder="' . esc_attr__( 'Your Website', 'aperitto' ) . '" name="url" id="url" class="last-child" value="'
 		             . esc_attr( $commenter['comment_author_url'] ) . '"  /></div>',
 		'cookies' => '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" '
 		             . $consent . ' />' .
-		             '<label for="wp-comment-cookies-consent">' . __( 'Save my name, email, and website in this browser for the next time I comment.', 'aperitto' ) . '</label></p>',
+		             '<label for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'aperitto' ) . '</label></p>',
 	) );
 	$args['fields']        = apply_filters( 'comment_form_default_fields', $fields );
-	$args['comment_field'] = '<div class="rcomment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="' . __( 'Message', 'aperitto' ) . '" aria-required="true"></textarea></div>';
+	$args['comment_field'] = '<div class="rcomment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="' . esc_attr__('Message', 'aperitto' ) . '" aria-required="true"></textarea></div>';
 
 	return $args;
 }

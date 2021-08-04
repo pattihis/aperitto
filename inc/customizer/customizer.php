@@ -1,6 +1,5 @@
 <?php
 
-
 /** =============================================================================
  * CUSTOM STYLES
  * ============================================================================= */
@@ -9,11 +8,12 @@ function aperitto_customizer_css() {
 	$style = '';
 
 
-// ---- header -----
-	$bgimg = get_header_image();
+	// ---- header -----
+	$bgimg = esc_url(get_header_image());
 
 	if ( ! empty( $bgimg ) ) {
-		$header_h   = get_custom_header()->height;
+
+		$header_h   = (int)get_custom_header()->height;
 		$fit_height = aperitto_get_theme_option( 'fix_header_height' );
 		if ( ! empty( $fit_height ) && ! empty( $header_h ) ) {
 			$fit_height = "@media screen and (min-width:1024px){.header-top-wrap{min-height:{$header_h}px}}";
@@ -50,12 +50,13 @@ function aperitto_customizer_css() {
 	//-----------------
 
 
-	$header_textcolor = get_theme_mod( 'header_textcolor', false );
+	$header_textcolor = esc_html(get_theme_mod( 'header_textcolor', false ));
 	if ( ! empty( $header_textcolor ) ) {
-		$style .= apply_filters( 'aperitto_customizer_header_textcolor_css', "#logo{color:#$header_textcolor}" );
+		$style .= apply_filters( 'aperitto_customizer_header_textcolor_css', "#logo{color:#$header_textcolor!important}" );
 	}
 
-	$main_color = aperitto_get_theme_option( 'maincolor' );
+
+	$main_color = esc_html(aperitto_get_theme_option( 'maincolor' ));
 	if ( ! empty( $main_color ) && '#137dad' != $main_color ) {
 
 		$main_color_css = "a:hover,#logo,.bx-controls a:hover .fa{color:$main_color}";
@@ -171,7 +172,7 @@ if ( ! function_exists( 'aperitto_customizer_live' ) ):
 
 		wp_enqueue_script(
 			'aperitto-customizer-js',
-			get_template_directory_uri() . '/inc/customizer/assets/customizer-preview.js', // URL
+			get_template_directory_uri() . '/inc/customizer/assets/customizer-preview.js',
 			array( 'jquery', 'customize-preview' ), null, true
 		);
 		wp_localize_script( 'aperitto-customizer-js', 'optname', [APERITTO_OPTION]);
@@ -185,7 +186,7 @@ if ( ! function_exists( 'aperitto_customizer_control_toggle' ) ):
 
 		wp_enqueue_script(
 			'aperitto-customizer-js',
-			get_template_directory_uri() . '/inc/customizer/assets/customizer-control-toggle.js', // URL
+			get_template_directory_uri() . '/inc/customizer/assets/customizer-control-toggle.js',
 			array( 'jquery', 'customize-preview' ), null, true
 		);
 
