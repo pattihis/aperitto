@@ -128,7 +128,7 @@ jQuery(document).ready(function ($) {
                 break;
             case 27: // esc
                 var mob_menu = $('#mobile-menu');
-                if ( mob_menu.length > 0 ) {
+                if ( mob_menu.length > 0 && $window.width() < 1024 ) {
                     e.preventDefault();
                     e.stopPropagation();
                     mob_menu.click();
