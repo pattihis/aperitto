@@ -60,8 +60,6 @@ add_action( 'after_setup_theme', 'aperitto_setup' );
 if ( ! function_exists( 'aperitto_enqueue_style_and_script' ) ) :
 	function aperitto_enqueue_style_and_script() {
 
-		global $post, $wp_query;
-
 		// STYLES
 		wp_enqueue_style( 'aperitto-style', get_stylesheet_uri(), array(), true );
 

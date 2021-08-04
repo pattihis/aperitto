@@ -65,7 +65,7 @@
 		<?php do_action( 'aperitto_before_topnav' ); ?>
         <div class="<?php echo apply_filters( 'aperitto_header_topnav_class', 'topnav' ); ?>">
 
-			<div id="mobile-menu" class="mm-active">&#9776;</div>
+			<div id="mobile-menu" tabindex="0">&#9776;</div>
 
 			<nav>
 				<?php if ( has_nav_menu( 'top' ) ) :

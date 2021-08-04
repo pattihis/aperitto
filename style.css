@@ -228,7 +228,13 @@ button:hover,
 /* mobile navigation button */
 #mobile-menu { display: block; padding: 15px 0; text-decoration: none; text-transform: uppercase; color: #fff;
 	text-align: center; font-weight: 500; cursor: pointer; background: #137dad;/*#eee;*/ z-index: 999; position: relative; }
-#mobile-menu:hover { opacity: 0.8; }
+#mobile-menu:focus,
+#mobile-menu:focus-within,
+#mobile-menu:hover {
+	box-shadow: 0 0 2px 2px #2098ce;
+	text-shadow: 0px 0px 2px #fff;
+	font-weight: 900;
+}
 
 
 /* header navigation */
@@ -248,6 +254,7 @@ button:hover,
 .top-menu li .sub-menu > li > a:focus-within,
 .top-menu li .sub-menu > li > span:focus-within  {
 	text-decoration: underline dotted #fff;
+	background-color: rgba(255,255,255,0.1);
 }
 .top-menu li a:hover,
 .top-menu li span:hover,
@@ -687,3 +694,4 @@ li.bbp-topic-freshness {
 }
 
 /* -------------------------------------------------------------------------- */
+
