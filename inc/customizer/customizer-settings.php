@@ -626,271 +626,8 @@ function aperitto_customizer_init( $wp_customize ) {
 		)
 	);
 
-	// --------------------------------------------------------------------------------------
-
-
-	$wp_customize->add_panel( 'aperitto_single_options',
-		array(
-			'title'       => __( "Post Options", 'aperitto' ),
-			'description' => __( "Set your custom options to displaying posts", 'aperitto' ),
-			'priority'    => 81
-		)
-	);
-
-
-	// --------  S T U C T U R E D   D A T A   --------------------------------------------------
-
-	$wp_customize->add_section(
-		'aperitto_structured_data',
-		array(
-			'title'    => __( 'Structured Data', 'aperitto' ),
-			'priority' => 82,
-			'panel'    => 'aperitto_single_options',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[schema_mark]',
-		array(
-			'type'              => 'option',
-			'default'           => '0',
-			'sanitize_callback' => 'sanitize_key',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'schema_mark_control',
-		array(
-			'settings' => APERITTO_OPTION . '[schema_mark]',
-			'label'    => __( "Enable Schema.org mark up according CreativeWork->Article and Comment", 'aperitto' ),
-			'section'  => 'aperitto_structured_data',
-			'type'     => 'checkbox',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[markup_telephone]',
-		array(
-			'type'              => 'option',
-			'default'           => '(000) 000-000-00',
-			'sanitize_callback' => 'aperitto_sanitize_text',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'markup_telephone_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[markup_telephone]',
-			'label'       => __( "Phone", 'aperitto' ),
-			'description' => __( "use in https://schema.org/Organization", 'aperitto' ),
-			'section'     => 'aperitto_structured_data',
-			'type'        => 'text',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[markup_adress]',
-		array(
-			'type'              => 'option',
-			'default'           => __( 'Street 1, City, Country', 'aperitto' ),
-			'sanitize_callback' => 'aperitto_sanitize_text',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'markup_adress_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[markup_adress]',
-			'label'       => __( "Address", 'aperitto' ),
-			'description' => __( "use in https://schema.org/Organization", 'aperitto' ),
-			'section'     => 'aperitto_structured_data',
-			'type'        => 'text',
-		)
-	);
-
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[markup_logo]',
-		array(
-			'type'              => 'option',
-			'default'           => get_template_directory_uri() . '/img/logo.jpg',
-			'sanitize_callback' => 'esc_url_raw',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( new WP_Customize_Image_Control(
-		$wp_customize,
-		'markup_logo_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[markup_logo]',
-			'label'       => __( 'Publisher logo', 'aperitto' ),
-			'description' => __( "use in https://schema.org/Organization", 'aperitto' ),
-			'section'     => 'aperitto_structured_data',
-		)
-	) );
-
-
-	// --------  Advertisement Banners or Custom Code  --------------------------------------------------
-
-	$wp_customize->add_section( 'aperitto_advertisement',
-		array(
-			'title'       => __( 'Ad Banners', 'aperitto' ),
-			'description' => __( 'Setup advertisement banners or custom code before and after post content', 'aperitto' ),
-			'panel'       => 'aperitto_single_options',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[before_content]',
-		array(
-			'type'              => 'option',
-			'default'           => "<!-- " . __( "Code before single post content", 'aperitto' ) . " -->",
-			'sanitize_callback' => 'aperitto_sanitize_html',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'before_content_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[before_content]',
-			'label'       => __( "Before content", 'aperitto' ),
-			'description' => __( "Code before single post content", 'aperitto' ),
-			'section'     => 'aperitto_advertisement',
-			'type'        => 'textarea',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[after_content]',
-		array(
-			'type'              => 'option',
-			'default'           => "<!-- " . __( "Code after single post content", 'aperitto' ) . " -->",
-			'sanitize_callback' => 'aperitto_sanitize_html',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'after_content_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[after_content]',
-			'label'       => __( "After content", 'aperitto' ),
-			'description' => __( "Code after single post content", 'aperitto' ),
-			'section'     => 'aperitto_advertisement',
-			'type'        => 'textarea',
-		)
-	);
-
-
-	// --------  C U S T O M   C O D E S  --------------------------------------------------
-
-	$wp_customize->add_section( 'aperitto_custom_code',
-		array(
-			'title'       => __( 'Custom Scripts', 'aperitto' ),
-			'description' => __( 'It helps you to setup custom scripts and styles', 'aperitto' ),
-			'priority'    => 91,
-		)
-	);
-
-
-	// ----
-
-	if ( class_exists( 'Aperitto_Group_Title_Control' ) ) {
-		$wp_customize->add_setting( APERITTO_OPTION . '[group_global_code]', array(
-			'default'           => '',
-			'sanitize_callback' => 'sanitize_key',
-		) );
-		$wp_customize->add_control( new Aperitto_Group_Title_Control( $wp_customize, 'aperitto_group_global_code', array(
-			'label'    => __( 'Global settings', 'aperitto' ),
-			'section'  => 'aperitto_custom_code',
-			'settings' => APERITTO_OPTION . '[group_global_code]',
-		) ) );
-	}
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[head_scripts]',
-		array(
-			'type'              => 'option',
-			'default'           => '<!-- header html from theme option -->',
-			'sanitize_callback' => 'aperitto_sanitize_html',
-			'transport'         => 'refresh'
-		)
-	);
-	$wp_customize->add_control( 'head_scripts_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[head_scripts]',
-			'label'       => __( "Scripts in header", 'aperitto' ),
-			'description' => __( "HTML code in &lt;head&gt; tag", 'aperitto' ),
-			'section'     => 'aperitto_custom_code',
-			'type'        => 'textarea',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[footer_scripts]',
-		array(
-			'type'              => 'option',
-			'default'           => '<!-- footer html from theme option -->',
-			'sanitize_callback' => 'aperitto_sanitize_html',
-			'transport'         => 'refresh'
-		)
-	);
-	$wp_customize->add_control( 'footer_scripts_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[footer_scripts]',
-			'label'       => __( "Scripts in site footer", 'aperitto' ),
-			'description' => __( "HTML code before &lt;/body&gt; tag", 'aperitto' ),
-			'section'     => 'aperitto_custom_code',
-			'type'        => 'textarea',
-		)
-	);
-
-
-	if ( class_exists( 'Aperitto_Group_Title_Control' ) ) {
-		$wp_customize->add_setting( APERITTO_OPTION . '[group_custom_css_code]', array(
-			'sanitize_callback' => 'sanitize_key',
-		) );
-		$wp_customize->add_control( new Aperitto_Group_Title_Control( $wp_customize, 'aperitto_group_custom_css_code', array(
-			'label'    => __( 'Custom CSS', 'aperitto' ),
-			'section'  => 'aperitto_custom_code',
-			'settings' => APERITTO_OPTION . '[group_custom_css_code]',
-		) ) );
-	}
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[custom_styles]',
-		array(
-			'type'              => 'option',
-			'default'           => '',
-			'sanitize_callback' => 'aperitto_sanitize_textarea',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'custom_styles_control',
-		array(
-			'settings'    => APERITTO_OPTION . '[custom_styles]',
-			'label'       => __( "Custom styles", 'aperitto' ),
-			'description' => __( "Add your custom CSS styles", 'aperitto' ),
-			'section'     => 'aperitto_custom_code',
-			'type'        => 'textarea',
-		)
-	);
-
 
 	// ----------  F O O T E R  ----------
-
 
 	$wp_customize->add_section(
 		'aperitto_footer_text',
@@ -898,6 +635,46 @@ function aperitto_customizer_init( $wp_customize ) {
 			'title'       => __( 'Footer', 'aperitto' ),
 			'description' => __( 'Customize footer', 'aperitto' ),
 			'priority'    => 92,
+		)
+	);
+
+	// ----
+
+	$wp_customize->add_setting(
+		APERITTO_OPTION . '[copyright_year]',
+		array(
+			'type'              => 'option',
+			'default'           => '1',
+			'sanitize_callback' => 'sanitize_key',
+			'transport'         => $transport
+		)
+	);
+	$wp_customize->add_control( 'copyright_year_control',
+		array(
+			'settings' => APERITTO_OPTION . '[copyright_year]',
+			'label'    => __( "Show 'Sitename © Year' in footer", 'aperitto' ),
+			'section'  => 'aperitto_footer_text',
+			'type'     => 'checkbox',
+		)
+	);
+
+	// ----
+
+	$wp_customize->add_setting(
+		APERITTO_OPTION . '[powered_by]',
+		array(
+			'type'              => 'option',
+			'default'           => '1',
+			'sanitize_callback' => 'sanitize_key',
+			'transport'         => $transport
+		)
+	);
+	$wp_customize->add_control( 'powered_by_control',
+		array(
+			'settings' => APERITTO_OPTION . '[powered_by]',
+			'label'    => __( "Show 'Powered by' in footer", 'aperitto' ),
+			'section'  => 'aperitto_footer_text',
+			'type'     => 'checkbox',
 		)
 	);
 
@@ -915,29 +692,9 @@ function aperitto_customizer_init( $wp_customize ) {
 	$wp_customize->add_control( 'copyright_text_control',
 		array(
 			'settings' => APERITTO_OPTION . '[copyright_text]',
-			'label'    => __( "Copyright text", 'aperitto' ),
+			'label'    => __( "Custom copyright text", 'aperitto' ),
 			'section'  => 'aperitto_footer_text',
 			'type'     => 'text',
-		)
-	);
-
-	// ----
-
-	$wp_customize->add_setting(
-		APERITTO_OPTION . '[footer_counters]',
-		array(
-			'type'              => 'option',
-			'default'           => '',
-			'sanitize_callback' => 'aperitto_sanitize_html',
-			'transport'         => $transport
-		)
-	);
-	$wp_customize->add_control( 'footer_counters_control',
-		array(
-			'settings' => APERITTO_OPTION . '[footer_counters]',
-			'label'    => __( "Counters code", 'aperitto' ),
-			'section'  => 'aperitto_footer_text',
-			'type'     => 'textarea',
 		)
 	);
 

@@ -3,7 +3,7 @@ Theme Name: Aperitto
 Author: George Pattihis
 Author URI: https://wordpress.org/support/users/pattihis/
 Description: Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean typography and spacious white layout make it great for any project. The user friendly customization options will get your site up and running in minutes. It features custom color options, customized layouts (left or right sidebar, full-width or centered content). Simple structured data mark-up, clean, valid and SEO-friendly code. Aperitto is ready to be used with child themes and is is developer-friendly with custom filters, hooks and actions. Fully compatible with WPML, WooCommerce and bbPress. Translation ready with German, Greek, French, Japanese, Polish, Russian, Turkish and Ukrainian included.
-Version: 1.0.3
+Version: 1.0.4
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 7.0
@@ -702,7 +702,7 @@ li.bbp-topic-freshness {
 	.rinput { display: inline-block; width: 30%; margin-right: 4%; }
 	.rurl { margin-right: 0; }
 
-	#copy {text-align: left; padding-bottom: 0;}
+	#copy {text-align: left; padding-bottom: 0; display: flex; flex-direction: column;}
 	#designedby {text-align: right;}
 
 }

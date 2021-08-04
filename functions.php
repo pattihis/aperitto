@@ -177,15 +177,11 @@ require_once( get_template_directory() . '/inc/layout.php' );
 require_once( get_template_directory() . '/inc/hooks.php' );
 require_once( get_template_directory() . '/inc/woo-hooks.php' );
 
-// Schema.org markup
-require_once( get_template_directory() . '/inc/schemaorg.php' );
-
 // theme options with Customizer API
 require_once( get_template_directory() . '/inc/admin/options.php' );
 require_once( get_template_directory() . '/inc/customizer/customizer-controls.php' );
 require_once( get_template_directory() . '/inc/customizer/customizer-settings.php' );
 require_once( get_template_directory() . '/inc/customizer/customizer.php' );
-
 
 if ( is_admin() ) :
 	// meta-box for layout control

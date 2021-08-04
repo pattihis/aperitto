@@ -228,7 +228,6 @@ jQuery(document).ready(function ($) {
 	// postmeta_list
 	wp.customize( 'postmeta_list', function (value) {
 		value.bind(function (to) {
-			// console.log( to );
 			$('.meta').find('span').addClass('hide');
 
 			var arr = to.split('_');
@@ -238,47 +237,32 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
+	// copyright_year
+	wp.customize( optname + '[copyright_year]', function (value) {
+        value.bind(function (to) {
+			console.log(to);
+			var $copyright_year = $('.copyrights .copyright-year');
+			false === to
+				? $copyright_year.addClass('hide')
+				: $copyright_year.removeClass('hide');
+        });
+    });
 
-	// custom html before_content
-	wp.customize( optname + '[before_content]', function (value) {
-		value.bind(function (to) {
-			var $block = $('.html-before-content');
-			if ( ! $block.length ) {
-				$('.entry').append('<div class="html-before-content"></div>');
-			}
-			$block.html( to );
-		});
-	});
-
-	// custom html after_content
-	wp.customize( optname + '[after_content]', function (value) {
-		value.bind(function (to) {
-			var $block = $('.html-after-content');
-			if ( ! $block.length ) {
-				$('.entry').append('<div class="html-after-content"></div>');
-			}
-			$block.html( to );
-		});
-	});
-
-	// custom_styles
-	wp.customize( optname + '[custom_styles]', function (value) {
-		value.bind(function (to) {
-			$(aperitto_custom_style).text( to );
-		});
-	});
+	// powered_by
+	wp.customize( optname + '[powered_by]', function (value) {
+        value.bind(function (to) {
+			console.log(to);
+			var $powered_by = $('.copyrights #designedby');
+			false === to
+				? $powered_by.addClass('hide')
+				: $powered_by.removeClass('hide');
+        });
+    });
 
 	// copyright_text
 	wp.customize( optname + '[copyright_text]', function (value) {
 		value.bind(function (to) {
 			$('.copyright-text').text( to );
-		});
-	});
-
-	// footer_counters
-	wp.customize( optname + '[footer_counters]', function (value) {
-		value.bind(function (to) {
-			$('.footer-counter').html( to );
 		});
 	});
 

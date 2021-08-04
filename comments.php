@@ -22,9 +22,7 @@ if ( post_password_required() )
 					'avatar_size' => '60',
 					'callback' => 'aperitto_html5_comment'
 				);
-				if ( aperitto_get_theme_option('schema_mark') ) {
-					$comm_args['callback'] = 'aperitto_schemaorg_html5_comment';
-				}
+
 				wp_list_comments( $comm_args );
 			?>
 		</ul><!-- .comment-list -->

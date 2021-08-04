@@ -1,18 +1,11 @@
-<?php
-
-$markup_opt = aperitto_get_theme_option( 'schema_mark' ); // false or 0
-$markup = ( is_single() && ( $markup_opt || false === $markup_opt ) ) ? true : false;
-
-?>
-
 <?php do_action( 'aperitto_before_post_article' ); ?>
-<article <?php post_class(); ?><?php echo ( $markup ) ? ' itemscope itemtype="http://schema.org/Article"' : ''; ?>><?php
+<article <?php post_class(); ?>><?php
 
 	do_action( 'aperitto_before_post_title' );
 	if ( is_single() ) :
 
 		do_action( 'aperitto_single_before_title' ); ?>
-		<h1<?php echo ( $markup ) ? ' itemprop="headline"' : ''; ?>><?php the_title(); ?></h1>
+		<h1><?php the_title(); ?></h1>
 		<?php do_action( 'aperitto_single_after_title' );
 
 	else:
@@ -23,12 +16,9 @@ $markup = ( is_single() && ( $markup_opt || false === $markup_opt ) ) ? true : f
 
 	endif;
 	do_action( 'aperitto_after_post_title' );
+	?>
 
-	/**
-	 * @hooked aperitto_get_postmeta() - 10
-	 */
-	do_action( 'aperitto_before_content' ); ?>
-	<div class="entry-box clearfix" <?php if ( $markup ) { echo "itemprop='articleBody'"; } ?>>
+	<div class="entry-box clearfix">
 
 		<?php
 		if ( ! is_single() ) {
@@ -49,8 +39,6 @@ $markup = ( is_single() && ( $markup_opt || false === $markup_opt ) ) ? true : f
 			the_excerpt();
 			do_action( 'aperitto_after_post_excerpt' );
 
-			/* see also /inc/html-blocks.php that is @hooked to `aperitto_after_post_excerpt` */
-
 		} else {
 
 			do_action( 'aperitto_before_single_content' );
@@ -68,19 +56,17 @@ $markup = ( is_single() && ( $markup_opt || false === $markup_opt ) ) ? true : f
 
 		} ?>
 
-	</div> <?php
-	do_action( 'aperitto_after_content' );
-
+	</div>
+	<div class="clearfix"></div>
+	<?php
 
 	if ( is_single() ) { ?>
 		<aside class="meta"><?php the_tags(); ?></aside>
 	<?php }
 
-	if ( $markup ) {
-		aperitto_markup_schemaorg();
-	} ?>
+	do_action( 'aperitto_before_close_post_article' ); ?>
 
-	<?php do_action( 'aperitto_before_close_post_article' ); ?>
 </article>
+
 <?php do_action( 'aperitto_after_post_article' ); ?>
 

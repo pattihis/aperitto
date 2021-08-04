@@ -63,41 +63,6 @@ function aperitto_change_the_excerpt( $more ) {
 add_action( 'excerpt_more', 'aperitto_change_the_excerpt' );
 
 
-/* ==========================================================================
- * echo custom css
- * ========================================================================== */
-function aperitto_print_custom_css_js() {
-
-	$css = aperitto_get_theme_option( 'custom_styles' );
-	$js  = aperitto_get_theme_option( 'head_scripts' );
-
-	if ( ! empty( $css ) ) {
-		echo "\n<style id='aperitto-custom-css'>" . wp_specialchars_decode( $css, ENT_QUOTES ) . "</style>\n";
-	}
-	if ( ! empty( $js ) ) {
-		echo "\n" . wp_specialchars_decode( $js, ENT_QUOTES ) . "\n";
-	}
-
-}
-
-add_action( 'wp_head', 'aperitto_print_custom_css_js', 20 );
-
-
-/* ==========================================================================
- * echo custom script in footer from options
- * ========================================================================== */
-function aperitto_print_footer_js() {
-
-	$footer_js = aperitto_get_theme_option( 'footer_scripts' );
-
-	if ( ! empty( $footer_js ) ) {
-		echo "\n" . wp_specialchars_decode( $footer_js, ENT_QUOTES ) . "\n";
-	}
-
-}
-
-add_action( 'wp_footer', 'aperitto_print_footer_js' );
-
 
 /* ==========================================================================
  * echo custom script in footer from options
@@ -132,50 +97,6 @@ endif;
 add_action( 'the_content', 'aperitto_the_content_entry', 1 );
 
 
-/* ==========================================================================
- * add advertisiment banners or custom code to the_content
- * ========================================================================== */
-function aperitto_content_custom_codes_div( $content ) {
-
-	if ( ! is_singular() ) {
-		return $content;
-	}
-
-	return '<div class="html-before-content"></div>' . $content . '<div class="clearfix"></div><div class="html-after-content"></div>';
-
-}
-
-add_action( 'the_content', 'aperitto_content_custom_codes_div', 1 );
-
-
-function aperitto_content_custom_codes( $content ) {
-
-	if ( ! is_singular() ) {
-		return $content;
-	}
-
-	$before_content = aperitto_get_theme_option( 'before_content' );
-	$after_content  = aperitto_get_theme_option( 'after_content' );
-
-	$filtered_content = apply_filters( 'aperitto_singular_content', $content );
-
-	$new_content = str_replace(
-		array(
-			'<div class="html-before-content"></div>',
-			'<div class="html-after-content"></div>'
-		),
-		array(
-			'<div class="html-before-content">' . wp_specialchars_decode( $before_content, ENT_QUOTES ) . '</div>',
-			'<div class="html-after-content">' . wp_specialchars_decode( $after_content, ENT_QUOTES ) . '</div>'
-		),
-		$filtered_content
-	);
-
-	return $new_content;
-
-}
-
-add_action( 'the_content', 'aperitto_content_custom_codes', 10 );
 
 
 /* ==========================================================================
