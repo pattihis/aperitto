@@ -30,7 +30,6 @@ if ( ! function_exists( 'aperitto_get_theme_option' ) ) :
 		return ( isset( $opt[ $key ] ) ) ? $opt[ $key ] : $default;
 	}
 endif;
-/* ============================================================================= */
 
 
 /* ==========================================================================
@@ -53,5 +52,4 @@ function aperitto_backward_compatible_theme_option_name() {
 }
 
 add_action( 'init', 'aperitto_backward_compatible_theme_option_name' );
-/* ============================================================================= */
 

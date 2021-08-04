@@ -80,7 +80,6 @@ function aperitto_customizer_css() {
 }
 
 add_action( 'wp_head', 'aperitto_customizer_css' );
-/* ======================================================================== */
 
 
 /* ======================================================================== *
@@ -162,7 +161,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		}
 	}
 }
-/* ======================================================================== */
 
 
 /* ========================================================================
@@ -194,6 +192,4 @@ if ( ! function_exists( 'aperitto_customizer_control_toggle' ) ):
 	}
 endif;
 add_action( 'customize_controls_enqueue_scripts', 'aperitto_customizer_control_toggle' );
-/* ======================================================================== */
-
 

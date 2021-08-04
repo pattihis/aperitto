@@ -12,7 +12,6 @@ if ( ! function_exists( 'aperitto_set_body_class' ) ) :
 	}
 endif;
 add_filter( 'body_class', 'aperitto_set_body_class' );
-/* ========================================================================== */
 
 
 /* set page layout
@@ -48,7 +47,6 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 				? $custom
 				: $layout_post;
 		}
-
 		// get settings for 'page' layout
 		elseif ( is_page() && isset( $layout_page ) ) {
 			// other static pages
@@ -56,12 +54,10 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 				? $custom
 				: $layout_page;
 		}
-
 		// get home layout settings
 		elseif ( is_home() && $layout_home ) {
 			$layout = $layout_home;
 		}
-
 		// woocommerce shop
 		elseif ( function_exists( 'is_shop' )  ) {
 
@@ -72,10 +68,7 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 			if ( is_tax('product_cat') ) {
 				$layout = get_theme_mod( 'layout_product_cat', 'rightbar' );
 			}
-
 		}
-
-
 		// get default layout settings
 		elseif ( $layout_def ) {
 			$layout = $layout_def;
@@ -87,16 +80,12 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 		return $layout;
 	}
 endif;
-/* ========================================================================== */
 
 
 /* set custom posts classes
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_set_post_class' ) ) :
 	function aperitto_set_post_class( $classes ) {
-//		global $post;
-
-//		$classes[] = 'post post-' . $post->ID;
 
 		if ( ! is_singular() && 'post' == get_post_type() ) {
 			$classes[] = 'anons';
@@ -111,41 +100,10 @@ if ( ! function_exists( 'aperitto_set_post_class' ) ) :
 			unset( $classes[ $hentry_pos ] );
 		}
 
-//		if ( in_array( 'sticky', $default_classes ) ) {
-//			$classes[] = 'sticky';
-//		}
-
-//		return $default_classes;
 		return $classes;
 	}
 endif;
 add_filter( 'post_class', 'aperitto_set_post_class' );
-/* ========================================================================== */
-
-
-/* clear nav menu classes
- * ========================================================================== */
-/*
- * if ( ! function_exists( 'aperitto_set_nav_menu_class' ) ) :
-	function aperitto_set_nav_menu_class( $classes ) {
-
-		$custom_classes = array();
-
-		foreach ( $classes as $class ) {
-			if ( $class == 'menu-item' || 'current-menu-item' == $class ) {
-				$custom_classes[] = $class;
-			}
-			if ( 'menu-item-has-children' == $class ) {
-				$custom_classes[] = $class;
-			}
-		}
-
-		return $custom_classes;
-	}
-endif;
-add_filter( 'nav_menu_css_class', 'aperitto_set_nav_menu_class' );
-*/
-/* ========================================================================== */
 
 
 /* exclude link to current page IN CATEGORIES list
@@ -164,7 +122,6 @@ function aperitto_no_link_current_page( $output ) {
 }
 
 add_filter( 'wp_nav_menu', 'aperitto_no_link_current_page' );
-/* ========================================================================== */
 
 
 /* set default setting for galleries
@@ -180,4 +137,3 @@ if ( ! function_exists( 'aperitto_set_gallery_defaults' ) ) :
 	}
 endif;
 add_filter( 'shortcode_atts_gallery', 'aperitto_set_gallery_defaults' );
-/* ========================================================================== */

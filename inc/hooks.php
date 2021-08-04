@@ -4,7 +4,7 @@
  * show 20 posts in search page
  *
  * @param $query WP_Query
- *               ========================================================================== */
+ * ========================================================================== */
 function aperitto_pre_get_posts( $query ) {
 
 	if ( is_admin() || ! $query->is_main_query() ) {
@@ -17,7 +17,6 @@ function aperitto_pre_get_posts( $query ) {
 }
 
 add_action( 'pre_get_posts', 'aperitto_pre_get_posts' );
-/* ========================================================================== */
 
 
 /**
@@ -62,7 +61,6 @@ function aperitto_change_the_excerpt( $more ) {
 }
 
 add_action( 'excerpt_more', 'aperitto_change_the_excerpt' );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -83,7 +81,6 @@ function aperitto_print_custom_css_js() {
 }
 
 add_action( 'wp_head', 'aperitto_print_custom_css_js', 20 );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -100,7 +97,6 @@ function aperitto_print_footer_js() {
 }
 
 add_action( 'wp_footer', 'aperitto_print_footer_js' );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -120,7 +116,6 @@ function aperitto_singular_thumbnail_attr( $args ) {
 }
 
 apply_filters( 'aperitto_singular_thumbnail_attr', 'aperitto_singular_thumbnail_attr' );
-/* ========================================================================== */
 
 
 
@@ -135,7 +130,6 @@ if ( ! function_exists( 'aperitto_the_content_entry' ) ) :
 	}
 endif;
 add_action( 'the_content', 'aperitto_the_content_entry', 1 );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -182,7 +176,6 @@ function aperitto_content_custom_codes( $content ) {
 }
 
 add_action( 'the_content', 'aperitto_content_custom_codes', 10 );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -223,7 +216,6 @@ endif;
 add_filter( 'the_content', 'aperitto_search_highlight' );
 add_filter( 'the_excerpt', 'aperitto_search_highlight' );
 add_filter( 'the_title', 'aperitto_search_highlight' );
-/* ========================================================================== */
 
 
 /**

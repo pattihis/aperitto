@@ -1,6 +1,5 @@
 <?php
 
-
 /* ==========================================================================
  *  Theme settings
  * ========================================================================== */
@@ -51,7 +50,6 @@ if ( ! function_exists( 'aperitto_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'aperitto_setup' );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -76,7 +74,6 @@ if ( ! function_exists( 'aperitto_enqueue_style_and_script' ) ) :
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'aperitto_enqueue_style_and_script' );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -88,7 +85,6 @@ if ( ! function_exists( 'aperitto_editor_styles' ) ) :
 	}
 endif;
 add_action( 'admin_init', 'aperitto_editor_styles' );
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -165,7 +161,6 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 
 	}
 endif;
-/* ========================================================================== */
 
 
 /* ==========================================================================
@@ -193,7 +188,6 @@ require_once( get_template_directory() . '/inc/customizer/customizer.php' );
 
 
 if ( is_admin() ) :
-
 	// meta-box for layout control
 	require_once( get_template_directory() . '/inc/admin/meta-boxes.php' );
 

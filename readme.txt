@@ -2,7 +2,7 @@
 Contributors: pattihis
 Requires at least: WordPress 5.0
 Tested up to: WordPress 5.8
-Version: 1.0.0
+Version: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
@@ -26,6 +26,9 @@ Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean 
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Clean-up unused code
 
 = 1.0.2 =
 * Resolve Warnings/Notices about text-domain and wp_localize_script
