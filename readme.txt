@@ -9,7 +9,7 @@ Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, c
 
 
 == Description ==
-Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean typography and spacious white layout make it great for any project. The user friendly customization options will get your site up and running in minutes. It features custom color options, customized layouts (left or right sidebar, full-width or centered content). Simple structured data mark-up, clean, valid and SEO-friendly code. Aperitto is ready to be used with child themes and is is developer-friendly with custom filters, hooks and actions. Fully compatible with WPML, WooCommerce and bbPress. Translation ready with German, Greek, French, Japanese, Polish, Russian, Turkish and Ukrainian included.
+Aperitto is a simple, minimal, responsive WordPress theme. The clean typography and basic layout options make it a great start for any project. The user friendly customization options will get your site up and running in minutes. It features custom color options, customized layouts (left or right sidebar, full-width or centered content), clean, valid and SEO-friendly code. Aperitto is ready to be used with child themes and it is developer-friendly with custom filters, hooks and actions. Fully compatible with WPML, WooCommerce and bbPress. Translation ready with German, Greek, French, Japanese, Polish, Russian, Turkish and Ukrainian included.
 
 * Responsive layout (mobile first)
 * Customized page layouts (left or right sidebar, full-width and centered content)
