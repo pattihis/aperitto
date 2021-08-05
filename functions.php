@@ -167,7 +167,7 @@ endif;
  *  Include libs
  * ========================================================================== */
 
-// functions what display some page parts
+// functions to display some page parts
 require_once( get_template_directory() . '/inc/html-blocks.php' );
 
 // layout functions and filters

@@ -28,8 +28,10 @@ Aperitto is a clean, simple, minimal and responsive WordPress theme.  The clean 
 == Changelog ==
 
 = 1.0.4 =
-* Remove Custom Code options and Structured Data sections
-*
+* Remove Custom Code options & Structured Data sections
+* Escape Output & Skip Link fix
+* Mobile Menu navigation improvements
+* Copyright Notice & License changes
 
 = 1.0.3 =
 * Clean-up unused code

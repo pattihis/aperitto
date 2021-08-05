@@ -106,24 +106,6 @@ endif;
 add_filter( 'post_class', 'aperitto_set_post_class' );
 
 
-/* exclude link to current page IN CATEGORIES list
- * ========================================================================== */
-function aperitto_no_link_current_category( $output ) {
-	return preg_replace( '%((current-cat)[^<]+)[^>]+>([^<]+)</a>%', '$1<span>$3</span>', $output, 1 );
-}
-
-add_filter( 'wp_list_categories', 'aperitto_no_link_current_category' );
-
-
-/* exclude link to current page IN MENU
- * ========================================================================== */
-function aperitto_no_link_current_page( $output ) {
-	return preg_replace( '%((current_page_item|current-menu-item)[^<]+)[^>]+>([^<]+)</a>%', '$1<span>$3</span>', $output, 1 );
-}
-
-add_filter( 'wp_nav_menu', 'aperitto_no_link_current_page' );
-
-
 /* set default setting for galleries
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_set_gallery_defaults' ) ) :

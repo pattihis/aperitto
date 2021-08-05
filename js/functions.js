@@ -53,8 +53,8 @@ jQuery(document).ready(function ($) {
 
     // Keyboard Arrow Navigation for Menu Items
 	$('.top-menu li a').keydown(function(e){
-        // Listen for the up, down, left and right arrow keys, otherwise, end here
-        if ([27,37,38,39,40].indexOf(e.keyCode) == -1) {
+        // Listen for the tab, esc, up, down, left and right arrow keys, otherwise, end here
+        if ([9,27,37,38,39,40].indexOf(e.keyCode) == -1) {
             return;
         }
         var link = $(this);
@@ -107,6 +107,15 @@ jQuery(document).ready(function ($) {
                 }
                 break;
             case 40: // down arrow
+                // find and open mobile sub menus
+                var mob_dropdown = link.next('.open-submenu');
+                if(mob_dropdown.length > 0){
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mob_dropdown.parent().addClass('submenu-opened');
+                    mob_dropdown.siblings('.sub-menu').removeClass('closed');
+                }
+
                 // Find the nested element that acts as the menu
                 var dropdown = link.parent('li').find('ul li');
 
@@ -117,14 +126,6 @@ jQuery(document).ready(function ($) {
                     dropdown.find('a').first().focus();
                 }
 
-                // find and open mobile sub menus
-                var mob_dropdown = link.next('.open-submenu');
-                if(mob_dropdown.length > 0){
-                    e.preventDefault();
-                    e.stopPropagation();
-                    mob_dropdown.parent().addClass('submenu-opened');
-                    mob_dropdown.siblings('.sub-menu').removeClass('closed');
-                }
                 break;
             case 27: // esc
                 var mob_menu = $('#mobile-menu');
@@ -134,13 +135,50 @@ jQuery(document).ready(function ($) {
                     mob_menu.click();
                 }
                 break;
+            case 9: // tab
+                var mob_menu = $('#mobile-menu');
+                if ( mob_menu.length > 0 && $window.width() < 1024 ) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if(e.shiftKey) {
+                        // This is the first item in the top level mega menu list
+                        if(link.parent('li').prevAll('li').first().length == 0) {
+                            $('#mobile-menu').focus();
+                        } else {
+                            // Focus on the previous item in the top level
+                            link.parent('li').prevAll('li').first().find('a').first().focus();
+                        }
+                    } else {
+                        // This is the last item
+                        if(link.parent('li').nextAll('li').first().length == 0) {
+                            $('#mobile-menu').focus();
+                        } else {
+                        // Focus on the next item in the top level
+                            link.parent('li').nextAll('li').first().find('a').first().focus();
+                        }
+                    }
+                }
+                break;
         }
     });
 
     $('#mobile-menu').keydown(function(e){
         var key = e.keyCode;
-        // tab, enter, space, down
-        if ( key == 9 || key == 13 || key == 32 || key == 40) {
+        // tab
+        if ( key == 9 ) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.topnav nav').slideDown();
+            $('#mobile-menu').text("X");
+            if(e.shiftKey) {
+                $(this).next('nav').find('ul > li:last > a')[0].focus();
+            } else {
+                $(this).next('nav').find('ul > li > a')[0].focus();
+            }
+        }
+        // enter, space, down
+        if ( key == 13 || key == 32 || key == 40) {
             e.preventDefault();
             e.stopPropagation();
             $(this).click();

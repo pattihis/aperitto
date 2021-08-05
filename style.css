@@ -196,8 +196,8 @@ big { font-size: 125% }
 .skip-to-content {
 	background: #fff;
 	top: 0;
-	left: 47%;
-	padding: 10px;
+	left: calc(50% - 62px);
+	padding: 6px 10px;
 	position: absolute;
 	transform: translateY(-100%);
 	transition: transform 0.3s;
@@ -206,6 +206,11 @@ big { font-size: 125% }
 
   .skip-to-content:focus {
 	transform: translateY(0%);
+	outline: 1px solid #ccc;
+  }
+
+  .logged-in .skip-to-content {
+	top: 34px;
   }
 
 
@@ -336,6 +341,7 @@ button:hover,
 .top-menu li .sub-menu > li > span:focus-within  {
 	text-decoration: underline dotted #fff;
 	background-color: rgba(255,255,255,0.1);
+	outline: 1px solid #2098ce;
 }
 .top-menu li a:hover,
 .top-menu li span:hover,
