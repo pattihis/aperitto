@@ -61,11 +61,14 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 
 			if ( ! empty( $this->label ) ) : ?>
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-			<?php endif;
+				<?php
+			endif;
 
-			if ( ! empty( $this->description ) ) : ?>
+			if ( ! empty( $this->description ) ) :
+				?>
 				<span class="description customize-control-description"><?php echo $this->description; ?></span>
-			<?php endif;
+				<?php
+			endif;
 
 			$multi_values = ! is_array( $this->value() ) ? explode( '_', $this->value() ) : $this->value();
 
@@ -74,7 +77,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 				$ordered[ $k ] = $this->choices[ $k ];
 			}
 			$ordered = array_merge( $ordered, array_diff( $this->choices, $ordered ) );
-
 
 			?>
 			<ul class="aperitto-sortable-checkboxes">
@@ -118,14 +120,17 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		 */
 		public function render_content() {
 
-			if ( ! empty( $this->label ) ) : ?>
+			if ( ! empty( $this->label ) ) :
+				?>
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-			<?php endif;
+				<?php
+			endif;
 
-			if ( ! empty( $this->description ) ) : ?>
+			if ( ! empty( $this->description ) ) :
+				?>
 				<span class="description customize-control-description"><?php echo $this->description; ?></span>
-			<?php endif;
-
+				<?php
+			endif;
 
 			?>
 			<div class="aperitto-child-design" <?php $this->link(); ?>>

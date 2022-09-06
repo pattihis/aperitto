@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aperitto\n"
 "POT-Creation-Date: 2016-11-02 10:36+0200\n"
-"PO-Revision-Date: 2021-08-05 00:56+0000\n"
+"PO-Revision-Date: 2022-09-05 20:45+0000\n"
 "Last-Translator: George Pattihis <gpattihis@gmail.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -16,28 +16,28 @@ msgstr ""
 "X-Poedit-KeywordsList: _;_e;__;_x\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:134
+#: functions.php:146
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s - %2$s"
 
-#: archive.php:44 index.php:22 search.php:20
+#: archive.php:56 index.php:28 search.php:27
 msgid "&laquo; Prev"
 msgstr "&laquo; Önceki"
 
-#: comments.php:13 comments.php:33
+#: comments.php:14 comments.php:34
 msgid "&larr; Older Comments"
 msgstr "&larr; Eski Yorumlar"
 
-#: inc/woo-hooks.php:17
+#: inc/woo-hooks.php:16
 msgid "Add to Cart"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:107
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Kenar çubuğunda görünecek widgeti buraya ekleyin."
 
-#: inc/customizer/customizer-settings.php:687
+#: inc/customizer/customizer-settings.php:765
 msgid "All rights reserved"
 msgstr "Her hakkı saklıdır"
 
@@ -47,102 +47,101 @@ msgstr ""
 
 #. Description of the theme
 msgid ""
-"Aperitto is a clean, simple, minimal and responsive WordPress theme.  The "
-"clean typography and spacious white layout make it great for any project. "
+"Aperitto is a simple, minimal, responsive WordPress theme. The clean "
+"typography and basic layout options make it a great start for any project. "
 "The user friendly customization options will get your site up and running in "
 "minutes. It features custom color options, customized layouts (left or right "
-"sidebar, full-width or centered content). Simple structured data mark-up, "
-"clean, valid and SEO-friendly code. Aperitto is ready to be used with child "
-"themes and is is developer-friendly with custom filters, hooks and actions. "
-"Fully compatible with WPML, WooCommerce and bbPress. Translation ready with "
-"German, Greek, French, Japanese, Polish, Russian, Turkish and Ukrainian "
-"included."
+"sidebar, full-width or centered content), clean, valid and SEO-friendly code."
+" Aperitto is ready to be used with child themes and it is developer-friendly "
+"with custom filters, hooks and actions. Fully compatible with WPML, "
+"WooCommerce and bbPress. Translation ready with German, Greek, French, "
+"Japanese, Polish, Russian, Turkish and Ukrainian included."
 msgstr ""
 
-#: footer.php:42
+#: footer.php:44
 msgid "Aperitto Theme"
 msgstr ""
 
-#: archive.php:30
+#: archive.php:37
 msgid "Archive"
 msgstr "Arşiv"
 
-#: archive.php:27
+#: archive.php:34
 msgid "Author archives"
 msgstr "Yazar arşivleri"
 
-#: inc/customizer/customizer-settings.php:232
+#: inc/customizer/customizer-settings.php:274
 msgid "Background with full repeat"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:233
+#: inc/customizer/customizer-settings.php:275
 msgid "Background with horizontal repeat"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:234
+#: inc/customizer/customizer-settings.php:276
 msgid "Background with vertical repeat"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:231
+#: inc/customizer/customizer-settings.php:273
 msgid "Background without repeat"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:121
+#: inc/customizer/customizer-settings.php:146
 msgid "Blog home page H1"
 msgstr ""
 
-#: sidebar.php:22
+#: sidebar.php:24
 msgid "Categories"
 msgstr "Kategoriler"
 
-#: archive.php:15
+#: archive.php:16
 msgid "Category"
 msgstr "Kategori "
 
-#: inc/customizer/customizer-settings.php:109
+#: inc/customizer/customizer-settings.php:127
 msgid "Center"
 msgstr "Orta"
 
-#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:380
-#: inc/customizer/customizer-settings.php:406
-#: inc/customizer/customizer-settings.php:432
-#: inc/customizer/customizer-settings.php:459
-#: inc/customizer/customizer-settings.php:488
-#: inc/customizer/customizer-settings.php:529
-#: inc/customizer/customizer-settings.php:553
-#: inc/customizer/customizer-settings.php:577
+#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:437
+#: inc/customizer/customizer-settings.php:464
+#: inc/customizer/customizer-settings.php:491
+#: inc/customizer/customizer-settings.php:518
+#: inc/customizer/customizer-settings.php:546
+#: inc/customizer/customizer-settings.php:596
+#: inc/customizer/customizer-settings.php:621
+#: inc/customizer/customizer-settings.php:646
 msgid "Centered Content"
 msgstr "Ortalanmış içerik"
 
-#: inc/customizer/customizer-settings.php:300
+#: inc/customizer/customizer-settings.php:343
 msgid "Choose main color"
 msgstr "Ana rengi seçin"
 
-#: inc/customizer/customizer-settings.php:278
+#: inc/customizer/customizer-settings.php:320
 msgid "Color & Layout"
 msgstr ""
 
-#: comments.php:9 inc/html-blocks.php:116
+#: comments.php:10 inc/html-blocks.php:113
 msgid "Comments"
 msgstr "Yorumlar"
 
-#: inc/customizer/customizer-settings.php:622
+#: inc/customizer/customizer-settings.php:699
 msgid "Comments count"
 msgstr "Yorum sayısı"
 
-#: inc/customizer/customizer-settings.php:166
+#: inc/customizer/customizer-settings.php:195
 msgid "Custom blog home H1"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:695
+#: inc/customizer/customizer-settings.php:774
 msgid "Custom copyright text"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:636
+#: inc/customizer/customizer-settings.php:712
 msgid "Customize footer"
 msgstr "Alt bilgiyi özelleştir"
 
-#: archive.php:21
+#: archive.php:28
 msgid "Day archives:"
 msgstr "Günlük arşiv:"
 
@@ -150,34 +149,34 @@ msgstr "Günlük arşiv:"
 msgid "Default"
 msgstr "Varsayılan"
 
-#: inc/customizer/customizer-settings.php:78
+#: inc/customizer/customizer-settings.php:93
 msgid "Description"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:149
 msgid "Edit"
 msgstr "Düzenle"
 
-#: inc/customizer/customizer-settings.php:253
+#: inc/customizer/customizer-settings.php:296
 msgid "Fit minimal header height to image height"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:635
+#: inc/customizer/customizer-settings.php:711
 msgid "Footer"
 msgstr "Alt bilgi"
 
-#: functions.php:38
+#: functions.php:42
 msgid "Footer Menu"
 msgstr "Alt Menü"
 
-#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:379
-#: inc/customizer/customizer-settings.php:405
-#: inc/customizer/customizer-settings.php:431
-#: inc/customizer/customizer-settings.php:458
-#: inc/customizer/customizer-settings.php:487
-#: inc/customizer/customizer-settings.php:528
-#: inc/customizer/customizer-settings.php:552
-#: inc/customizer/customizer-settings.php:576
+#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:436
+#: inc/customizer/customizer-settings.php:463
+#: inc/customizer/customizer-settings.php:490
+#: inc/customizer/customizer-settings.php:517
+#: inc/customizer/customizer-settings.php:545
+#: inc/customizer/customizer-settings.php:595
+#: inc/customizer/customizer-settings.php:620
+#: inc/customizer/customizer-settings.php:645
 msgid "Fullwidth Content"
 msgstr "Tam genişlikli içerik"
 
@@ -185,23 +184,23 @@ msgstr "Tam genişlikli içerik"
 msgid "George Pattihis"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:480
+#: inc/customizer/customizer-settings.php:538
 msgid "Global layout"
 msgstr "Genel düzen"
 
-#: inc/customizer/customizer-settings.php:17
+#: inc/customizer/customizer-settings.php:16
 msgid "Header Logo/Title"
 msgstr ""
 
-#: header.php:83 header.php:86
+#: header.php:98 header.php:101
 msgid "Home"
 msgstr "Ana sayfa"
 
-#: inc/customizer/customizer-settings.php:141
+#: inc/customizer/customizer-settings.php:169
 msgid "Home H1 position"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:225
+#: inc/customizer/customizer-settings.php:267
 msgid "How to display image"
 msgstr ""
 
@@ -209,15 +208,19 @@ msgstr ""
 msgid "https://wordpress.org/support/users/pattihis/"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:230
+#. URI of the theme
+msgid "https://wordpress.org/themes/aperitto/"
+msgstr ""
+
+#: inc/customizer/customizer-settings.php:272
 msgid "Image after site title"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:229
+#: inc/customizer/customizer-settings.php:271
 msgid "Image before site title"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:481
+#: inc/customizer/customizer-settings.php:539
 msgid "It is used when individual page layout is not set"
 msgstr "Bireysel sayfa düzeni ayarlanmadığında kullanılır"
 
@@ -225,50 +228,50 @@ msgstr "Bireysel sayfa düzeni ayarlanmadığında kullanılır"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:314
+#: inc/customizer/customizer-settings.php:365
 msgid "Layout"
 msgstr "Düzen"
 
-#: inc/customizer/customizer-settings.php:373
+#: inc/customizer/customizer-settings.php:430
 msgid "Layout on Home"
 msgstr "Ana sayfa düzeni"
 
-#: inc/customizer/customizer-settings.php:425
+#: inc/customizer/customizer-settings.php:484
 msgid "Layout on Page"
 msgstr "Sabit sayfa düzeni"
 
-#: inc/customizer/customizer-settings.php:399
+#: inc/customizer/customizer-settings.php:457
 msgid "Layout on Post"
 msgstr "Alt sayfa düzeni"
 
-#: inc/customizer/customizer-settings.php:452
+#: inc/customizer/customizer-settings.php:511
 msgid "Layout on Search results page"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:546
+#: inc/customizer/customizer-settings.php:614
 msgid "Layout on WooCommerce Product page"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:570
+#: inc/customizer/customizer-settings.php:639
 msgid "Layout on WooCommerce Product's category"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:522
+#: inc/customizer/customizer-settings.php:589
 msgid "Layout on WooCommerce Shop page"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:107
+#: inc/customizer/customizer-settings.php:125
 msgid "Left"
 msgstr "Sol"
 
-#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:378
-#: inc/customizer/customizer-settings.php:404
-#: inc/customizer/customizer-settings.php:430
-#: inc/customizer/customizer-settings.php:457
-#: inc/customizer/customizer-settings.php:486
-#: inc/customizer/customizer-settings.php:527
-#: inc/customizer/customizer-settings.php:551
-#: inc/customizer/customizer-settings.php:575
+#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:435
+#: inc/customizer/customizer-settings.php:462
+#: inc/customizer/customizer-settings.php:489
+#: inc/customizer/customizer-settings.php:516
+#: inc/customizer/customizer-settings.php:544
+#: inc/customizer/customizer-settings.php:594
+#: inc/customizer/customizer-settings.php:619
+#: inc/customizer/customizer-settings.php:644
 msgid "Leftbar"
 msgstr "Sol çubuk"
 
@@ -276,39 +279,39 @@ msgstr "Sol çubuk"
 msgid "Logo image display options"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:299
+#: inc/customizer/customizer-settings.php:342
 msgid "Main color"
 msgstr "Ana renk"
 
-#: functions.php:37
+#: functions.php:41
 msgid "Main Menu"
 msgstr "Ana Menü"
 
-#: inc/customizer/customizer-settings.php:280
+#: inc/customizer/customizer-settings.php:322
 msgid "Main theme options"
 msgstr "Ana tema seçenekleri"
 
-#: inc/hooks.php:44
+#: inc/hooks.php:47
 msgid "Message"
 msgstr "Mesaj"
 
-#: archive.php:23
+#: archive.php:30
 msgid "Monthly archives:"
 msgstr "Aylık arşiv:"
 
-#: inc/customizer/customizer-settings.php:147
+#: inc/customizer/customizer-settings.php:175
 msgid "My custom title before posts"
 msgstr ""
 
-#: comments.php:14 comments.php:34
+#: comments.php:15 comments.php:35
 msgid "Newer Comments &rarr;"
 msgstr "Yeni Yorumlar &rarr;"
 
-#: archive.php:45 index.php:23 search.php:21
+#: archive.php:57 index.php:29 search.php:28
 msgid "Next &raquo;"
 msgstr "Sonraki &raquo;"
 
-#: search.php:27
+#: search.php:36
 msgid "No results for "
 msgstr "Sonuç yok:"
 
@@ -320,20 +323,20 @@ msgstr "Sadece logo, metinsiz"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:200
+#: inc/customizer/customizer-settings.php:240
 msgid "Other"
 msgstr "Diğer"
 
-#: inc/customizer/customizer-settings.php:594
+#: inc/customizer/customizer-settings.php:668
 msgid "Other options"
 msgstr "Diğer Seçenekler"
 
-#: content.php:50 page.php:23
+#: content.php:59 page.php:27
 msgid "Page"
 msgstr ""
 
 #. %: Page number.
-#: content.php:53 page.php:26
+#: content.php:62 page.php:30
 msgid "Page %"
 msgstr ""
 
@@ -353,54 +356,54 @@ msgstr "Logo metnin sağında"
 msgid "Picture under the text"
 msgstr "Logo metnin altında"
 
-#: inc/customizer/customizer-settings.php:620
+#: inc/customizer/customizer-settings.php:697
 msgid "Post author"
 msgstr "Yazar"
 
-#: inc/customizer/customizer-settings.php:621
+#: inc/customizer/customizer-settings.php:698
 msgid "Post categories"
 msgstr "Kategori"
 
-#: inc/customizer/customizer-settings.php:615
+#: inc/customizer/customizer-settings.php:692
 msgid "Post meta"
 msgstr "Meta bilgileri"
 
-#: inc/customizer/customizer-settings.php:623
+#: inc/customizer/customizer-settings.php:700
 msgid "Post tags"
 msgstr "Etiket"
 
-#: archive.php:52 index.php:30
+#: archive.php:67 index.php:39
 msgid "Posts not found"
 msgstr "Mesaj yok"
 
-#: footer.php:41
+#: footer.php:43
 msgid "Powered by"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:619
+#: inc/customizer/customizer-settings.php:696
 msgid "Publication date"
 msgstr "Yayın tarihi"
 
-#: inc/html-blocks.php:14
+#: inc/html-blocks.php:13
 msgid "Read more"
 msgstr "Devamı..."
 
-#: inc/customizer/customizer-settings.php:108
+#: inc/customizer/customizer-settings.php:126
 msgid "Right"
 msgstr "Sağ"
 
-#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:377
-#: inc/customizer/customizer-settings.php:403
-#: inc/customizer/customizer-settings.php:429
-#: inc/customizer/customizer-settings.php:456
-#: inc/customizer/customizer-settings.php:485
-#: inc/customizer/customizer-settings.php:526
-#: inc/customizer/customizer-settings.php:550
-#: inc/customizer/customizer-settings.php:574
+#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:434
+#: inc/customizer/customizer-settings.php:461
+#: inc/customizer/customizer-settings.php:488
+#: inc/customizer/customizer-settings.php:515
+#: inc/customizer/customizer-settings.php:543
+#: inc/customizer/customizer-settings.php:593
+#: inc/customizer/customizer-settings.php:618
+#: inc/customizer/customizer-settings.php:643
 msgid "Rightbar"
 msgstr "Sağ çubuk"
 
-#: inc/hooks.php:41
+#: inc/hooks.php:43
 msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
@@ -417,90 +420,90 @@ msgstr "Arama sonuçları:"
 msgid "Select Layout"
 msgstr "Düzen Seçin"
 
-#: inc/customizer/customizer-settings.php:315
+#: inc/customizer/customizer-settings.php:366
 msgid "Set up layout for site pages"
 msgstr "Site sayfaları için düzen oluştur"
 
-#: inc/customizer/customizer-settings.php:675
+#: inc/customizer/customizer-settings.php:753
 msgid "Show 'Powered by' in footer"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:655
+#: inc/customizer/customizer-settings.php:732
 msgid "Show 'Sitename © Year' in footer"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:353
+#: inc/customizer/customizer-settings.php:409
 msgid "Show featured images on mobile"
 msgstr "Öne çıkan resimleri mobil cihazda göster"
 
-#: inc/customizer/customizer-settings.php:335
+#: inc/customizer/customizer-settings.php:389
 msgid "Show sidebar on mobile"
 msgstr "Mobil cihazda kenar çubuğu göster"
 
-#: inc/customizer/customizer-settings.php:184
+#: inc/customizer/customizer-settings.php:217
 msgid "Show site description"
 msgstr "Site açıklamasını göster"
 
-#: functions.php:97
+#: functions.php:105
 msgid "Sidebar"
 msgstr "Kenar Çubuğu"
 
-#: inc/customizer/customizer-settings.php:263
+#: inc/customizer/customizer-settings.php:306
 msgid "Site Background"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:55
+#: inc/customizer/customizer-settings.php:61
 msgid "Site title"
 msgstr "Site Başlığı"
 
-#: inc/customizer/customizer-settings.php:146
+#: inc/customizer/customizer-settings.php:174
 msgid "Site title in header"
 msgstr ""
 
-#: header.php:18
+#: header.php:21
 msgid "Skip to content"
 msgstr ""
 
-#: archive.php:18
+#: archive.php:22
 msgid "Tag"
 msgstr "Etiket"
 
-#: inc/html-blocks.php:119
+#: inc/html-blocks.php:116
 msgid "Tags: "
 msgstr "Etiketler: "
 
-#: inc/customizer/customizer-settings.php:142
+#: inc/customizer/customizer-settings.php:170
 msgid "This option not affect to other pages, for home blog page only."
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:103
+#: inc/customizer/customizer-settings.php:121
 msgid "Title position"
 msgstr ""
 
-#: inc/customizer/customizer-settings.php:616
+#: inc/customizer/customizer-settings.php:693
 msgid "What meta information to display for posts"
 msgstr "Yayınlar içerikler için hangi meta bilgileri görüntülenecek?"
 
-#: inc/customizer/customizer-settings.php:504
+#: inc/customizer/customizer-settings.php:568
 msgid "WooCommerce Layout"
 msgstr ""
 
-#: archive.php:25
+#: archive.php:32
 msgid "Year archives:"
 msgstr "Yıllık arşiv:"
 
-#: functions.php:141
+#: functions.php:153
 msgid "Your comment is awaiting moderation."
 msgstr "Yorumunuz onay bekliyor."
 
-#: inc/hooks.php:35
+#: inc/hooks.php:37
 msgid "Your E-mail"
 msgstr "E-Posta"
 
-#: inc/hooks.php:33
+#: inc/hooks.php:35
 msgid "Your Name"
 msgstr "Adınız"
 
-#: inc/hooks.php:37
+#: inc/hooks.php:39
 msgid "Your Website"
 msgstr "Web site"

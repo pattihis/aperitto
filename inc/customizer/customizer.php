@@ -7,13 +7,12 @@ function aperitto_customizer_css() {
 
 	$style = '';
 
-
 	// ---- header -----
-	$bgimg = esc_url(get_header_image());
+	$bgimg = esc_url( get_header_image() );
 
 	if ( ! empty( $bgimg ) ) {
 
-		$header_h   = (int)get_custom_header()->height;
+		$header_h   = (int) get_custom_header()->height;
 		$fit_height = aperitto_get_theme_option( 'fix_header_height' );
 		if ( ! empty( $fit_height ) && ! empty( $header_h ) ) {
 			$fit_height = "@media screen and (min-width:1024px){.header-top-wrap{min-height:{$header_h}px}}";
@@ -21,7 +20,7 @@ function aperitto_customizer_css() {
 			$fit_height = '';
 		}
 
-		//-----------------
+		// -----------------
 
 		$himg_position = aperitto_get_theme_option( 'header_image_position' );
 		switch ( $himg_position ) {
@@ -47,22 +46,20 @@ function aperitto_customizer_css() {
 				break;
 		}
 	}
-	//-----------------
+	// -----------------
 
-
-	$header_textcolor = esc_html(get_theme_mod( 'header_textcolor', false ));
+	$header_textcolor = esc_html( get_theme_mod( 'header_textcolor', false ) );
 	if ( ! empty( $header_textcolor ) ) {
 		$style .= apply_filters( 'aperitto_customizer_header_textcolor_css', "#logo{color:#$header_textcolor!important}" );
 	}
 
+	$main_color = esc_html( aperitto_get_theme_option( 'maincolor' ) );
+	if ( ! empty( $main_color ) && '#137dad' !== $main_color ) {
 
-	$main_color = esc_html(aperitto_get_theme_option( 'maincolor' ));
-	if ( ! empty( $main_color ) && '#137dad' != $main_color ) {
-
-		$main_color_css = "a:hover,#logo,.bx-controls a:hover .fa{color:$main_color}";
+		$main_color_css  = "a:hover,#logo,.bx-controls a:hover .fa{color:$main_color}";
 		$main_color_css .= "a:hover{color:$main_color}";
 		$main_color_css .= "blockquote,q,input:focus,textarea:focus,select:focus{border-color:$main_color}";
-		$main_color_css .= "input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer{background-color:$main_color}";
+		$main_color_css .= "input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer,#toTop{background-color:$main_color}";
 		$main_color_css .= "@media screen and (max-width:1023px){.topnav{background-color:$main_color}}";
 
 		$style .= apply_filters( 'aperitto_customizer_main_color_css', $main_color_css );
@@ -76,14 +73,15 @@ function aperitto_customizer_css() {
 
 	echo ( $style )
 		? "<!-- BEGIN Customizer CSS -->\n<style type='text/css' id='aperitto-customizer-css'>$style</style>\n<!-- END Customizer CSS -->\n"
-		: "";
+		: '';
 
 }
 
 add_action( 'wp_head', 'aperitto_customizer_css' );
 
 
-/* ======================================================================== *
+/*
+ ======================================================================== *
  * Customizer functions
  * ======================================================================== */
 
@@ -164,30 +162,35 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 }
 
 
-/* ========================================================================
+/*
+ ========================================================================
  *            script & styles for CUSTOMIZER
  * ======================================================================== */
-if ( ! function_exists( 'aperitto_customizer_live' ) ):
+if ( ! function_exists( 'aperitto_customizer_live' ) ) :
 	function aperitto_customizer_live() {
 
 		wp_enqueue_script(
 			'aperitto-customizer-js',
 			get_template_directory_uri() . '/inc/customizer/assets/customizer-preview.js',
-			array( 'jquery', 'customize-preview' ), null, true
+			array( 'jquery', 'customize-preview' ),
+			null,
+			true
 		);
-		wp_localize_script( 'aperitto-customizer-js', 'optname', [APERITTO_OPTION]);
+		wp_localize_script( 'aperitto-customizer-js', 'optname', array( APERITTO_OPTION ) );
 
 	}
 endif;
 add_action( 'customize_preview_init', 'aperitto_customizer_live' );
 
-if ( ! function_exists( 'aperitto_customizer_control_toggle' ) ):
+if ( ! function_exists( 'aperitto_customizer_control_toggle' ) ) :
 	function aperitto_customizer_control_toggle() {
 
 		wp_enqueue_script(
 			'aperitto-customizer-js',
 			get_template_directory_uri() . '/inc/customizer/assets/customizer-control-toggle.js',
-			array( 'jquery', 'customize-preview' ), null, true
+			array( 'jquery', 'customize-preview' ),
+			null,
+			true
 		);
 
 	}

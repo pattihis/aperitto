@@ -7,16 +7,16 @@
  * ======================================================================== */
 function aperitto_add_custom_box() {
 
-	// Adding layout meta box for page / post / product
+	// Adding layout meta box for page / post / product.
 
 	add_meta_box(
-        'aperitto-page-layout',
-        __( 'Select Layout', 'aperitto' ),
-        'aperitto_page_layout',
-        array('post', 'page', 'product'),
-        'side',
-        'default'
-    );
+		'aperitto-page-layout',
+		__( 'Select Layout', 'aperitto' ),
+		'aperitto_page_layout',
+		array( 'post', 'page', 'product' ),
+		'side',
+		'default'
+	);
 
 }
 
@@ -31,28 +31,28 @@ function aperitto_get_default_page_layouts() {
 		'default-layout' => array(
 			'id'    => 'aperitto_page_layout',
 			'value' => 'default',
-			'label' => __( 'Default', 'aperitto' )
+			'label' => __( 'Default', 'aperitto' ),
 		),
 		'rightbar'       => array(
 			'id'    => 'aperitto_page_layout',
 			'value' => 'rightbar',
-			'label' => __( 'Rightbar', 'aperitto' )
+			'label' => __( 'Rightbar', 'aperitto' ),
 		),
 		'leftbar'        => array(
 			'id'    => 'aperitto_page_layout',
 			'value' => 'leftbar',
-			'label' => __( 'Leftbar', 'aperitto' )
+			'label' => __( 'Leftbar', 'aperitto' ),
 		),
 		'full'           => array(
 			'id'    => 'aperitto_page_layout',
 			'value' => 'full',
-			'label' => __( 'Fullwidth Content', 'aperitto' )
+			'label' => __( 'Fullwidth Content', 'aperitto' ),
 		),
 		'center'         => array(
 			'id'    => 'aperitto_page_layout',
 			'value' => 'center',
-			'label' => __( 'Centered Content', 'aperitto' )
-		)
+			'label' => __( 'Centered Content', 'aperitto' ),
+		),
 	);
 
 	return $page_layout;
@@ -60,7 +60,8 @@ function aperitto_get_default_page_layouts() {
 }
 
 
-/* ========================================================================
+/*
+ ========================================================================
  *
  * Displays metabox to for select layout option
  *
@@ -79,15 +80,16 @@ function aperitto_page_layout() {
 			$layout_meta = 'default';
 		}
 		?>
-        <label class="aperitto-post-format-icon">
-            <input class="aperitto-post-format" type="radio" name="<?php echo $field['id']; ?>" value="<?php echo $field['value']; ?>" <?php checked( $field['value'], $layout_meta ); ?>/>
+		<label class="aperitto-post-format-icon">
+			<input class="aperitto-post-format" type="radio" name="<?php echo $field['id']; ?>" value="<?php echo $field['value']; ?>" <?php checked( $field['value'], $layout_meta ); ?>/>
 			<?php echo $field['label']; ?></label><br />
 		<?php
 	}
 }
 
 
-/* ========================================================================
+/*
+ ========================================================================
  *
  * save the custom metabox data
  *
@@ -115,7 +117,7 @@ function aperitto_save_custom_meta( $post_id ) {
 	}
 
 	foreach ( $page_layout as $field ) {
-		//Execute this saving function
+		// Execute this saving function
 		$old = get_post_meta( $post_id, $field['id'], true );
 		$new = isset( $_POST[ $field['id'] ] ) ? $_POST[ $field['id'] ] : 'default';
 		if ( $new && $new != $old ) {

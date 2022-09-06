@@ -132,7 +132,7 @@ jQuery(document).ready(function ($) {
 			aperitto_update_style( 'a:hover,#logo,.bx-controls a:hover .fa{color:', to, '}' );
 			aperitto_update_style( 'a:hover{color:', to, '}' );
 			aperitto_update_style( 'blockquote,q,input:focus,textarea:focus,select:focus{border-color:', to, '}' );
-			aperitto_update_style( 'input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer{background-color:', to, '}' );
+			aperitto_update_style( 'input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer,#toTop{background-color:', to, '}' );
 			aperitto_update_style( '@media screen and (max-width:1023px){.topnav{background-color:', to, '}}' );
 		});
 	});

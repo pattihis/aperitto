@@ -1,10 +1,10 @@
 === Aperitto ===
 Contributors: pattihis
 Requires at least: WordPress 5.0
-Tested up to: WordPress 5.8
-Version: 1.0.4
-License: GNU General Public License v3.0
-License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Tested up to: WordPress 6.0
+Version: 1.0.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
 
 
@@ -26,6 +26,13 @@ Aperitto is a simple, minimal, responsive WordPress theme. The clean typography 
 
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix Back-To-Top with main theme color
+* Sync Translation Files
+
+= 1.0.5 =
+* Clean up code and format by WPCS
 
 = 1.0.4 =
 * Remove Custom Code options & Structured Data sections
@@ -51,21 +58,23 @@ Aperitto is a simple, minimal, responsive WordPress theme. The clean typography 
 = 1.0.0 =
 * Initial Release
 
-
 == Copyright ==
 
-Aperitto WordPress Theme, Copyright 2021
+Aperitto WordPress Theme, Copyright 2021 George Pattihis
 Aperitto theme files, scripts, icons and images are distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, version 3 of the License, or
+the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/gpl-2.0.html
 
 Aperitto Theme bundles the following third-party resources:
 

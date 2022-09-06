@@ -1,6 +1,7 @@
 <?php
 
-/* ==========================================================================
+/*
+ ==========================================================================
  *  Theme settings
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_setup' ) ) :
@@ -20,24 +21,27 @@ if ( ! function_exists( 'aperitto_setup' ) ) :
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
-		add_theme_support( "wp-block-styles" );
-		add_theme_support( "responsive-embeds" );
-		add_theme_support( "align-wide" );
-
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'align-wide' );
 
 		add_theme_support( 'custom-background', apply_filters( 'aperitto_custom_background_args', array( 'default-color' => 'eeeeee' ) ) );
-		add_theme_support( 'custom-header', array(
-			'width'       => 1080,
-			'height'      => 190,
-			'flex-height' => true,
-			'flex-width' => true,
-		) );
+		add_theme_support(
+			'custom-header',
+			array(
+				'width'       => 1080,
+				'height'      => 190,
+				'flex-height' => true,
+				'flex-width'  => true,
+			)
+		);
 
-		register_nav_menus( array(
-			'top'    => __( 'Main Menu', 'aperitto' ),
-			'bottom' => __( 'Footer Menu', 'aperitto' )
-		) );
-
+		register_nav_menus(
+			array(
+				'top'    => __( 'Main Menu', 'aperitto' ),
+				'bottom' => __( 'Footer Menu', 'aperitto' ),
+			)
+		);
 
 		// logo
 		$args = array();
@@ -52,7 +56,8 @@ endif;
 add_action( 'after_setup_theme', 'aperitto_setup' );
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
  *  Load scripts and styles
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_enqueue_style_and_script' ) ) :
@@ -76,7 +81,8 @@ endif;
 add_action( 'wp_enqueue_scripts', 'aperitto_enqueue_style_and_script' );
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
  *  admin area
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_editor_styles' ) ) :
@@ -87,21 +93,24 @@ endif;
 add_action( 'admin_init', 'aperitto_editor_styles' );
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
  *  Register widget area
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_widgets_init' ) ) :
 	function aperitto_widgets_init() {
 
-		register_sidebar( array(
-			'name'          => __( 'Sidebar', 'aperitto' ),
-			'id'            => 'sidebar',
-			'description'   => __( 'Add widgets here to appear in your sidebar.', 'aperitto' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</li>',
-			'before_title'  => '<p class="wtitle">',
-			'after_title'   => '</p>',
-		) );
+		register_sidebar(
+			array(
+				'name'          => __( 'Sidebar', 'aperitto' ),
+				'id'            => 'sidebar',
+				'description'   => __( 'Add widgets here to appear in your sidebar.', 'aperitto' ),
+				'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<p class="wtitle">',
+				'after_title'   => '</p>',
+			)
+		);
 
 	}
 endif;
@@ -109,7 +118,8 @@ add_action( 'widgets_init', 'aperitto_widgets_init' );
 
 
 
-/* ========================================================================== *
+/*
+ ========================================================================== *
  * default COMMENT callback
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_html5_comment' ) ) :
@@ -122,9 +132,11 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 
 			<footer class="comment-meta">
 				<div class="comment-author">
-					<?php if ( 0 != $args['avatar_size'] ) {
+					<?php
+					if ( 0 != $args['avatar_size'] ) {
 						echo get_avatar( $comment, $args['avatar_size'] );
-					} ?>
+					}
+					?>
 					<b class="fn"><?php comment_author_link(); ?></b>
 				</div>
 
@@ -147,12 +159,18 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 			</div>
 
 			<div class="reply">
-				<?php comment_reply_link( array_merge( $args, array(
-						'add_below' => 'div-comment',
-						'depth'     => $depth,
-						'max_depth' => $args['max_depth']
+				<?php
+				comment_reply_link(
+					array_merge(
+						$args,
+						array(
+							'add_below' => 'div-comment',
+							'depth'     => $depth,
+							'max_depth' => $args['max_depth'],
+						)
 					)
-				) ); ?>
+				);
+				?>
 			</div>
 
 		</div>
@@ -163,28 +181,29 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 endif;
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
  *  Include libs
  * ========================================================================== */
 
 // functions to display some page parts
-require_once( get_template_directory() . '/inc/html-blocks.php' );
+require_once get_template_directory() . '/inc/html-blocks.php';
 
 // layout functions and filters
-require_once( get_template_directory() . '/inc/layout.php' );
+require_once get_template_directory() . '/inc/layout.php';
 
 // hooks
-require_once( get_template_directory() . '/inc/hooks.php' );
-require_once( get_template_directory() . '/inc/woo-hooks.php' );
+require_once get_template_directory() . '/inc/hooks.php';
+require_once get_template_directory() . '/inc/woo-hooks.php';
 
 // theme options with Customizer API
-require_once( get_template_directory() . '/inc/admin/options.php' );
-require_once( get_template_directory() . '/inc/customizer/customizer-controls.php' );
-require_once( get_template_directory() . '/inc/customizer/customizer-settings.php' );
-require_once( get_template_directory() . '/inc/customizer/customizer.php' );
+require_once get_template_directory() . '/inc/admin/options.php';
+require_once get_template_directory() . '/inc/customizer/customizer-controls.php';
+require_once get_template_directory() . '/inc/customizer/customizer-settings.php';
+require_once get_template_directory() . '/inc/customizer/customizer.php';
 
 if ( is_admin() ) :
 	// meta-box for layout control
-	require_once( get_template_directory() . '/inc/admin/meta-boxes.php' );
+	require_once get_template_directory() . '/inc/admin/meta-boxes.php';
 
 endif;

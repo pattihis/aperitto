@@ -1,6 +1,7 @@
 <?php
 
-/* set custom body classes
+/*
+ set custom body classes
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_set_body_class' ) ) :
 	function aperitto_set_body_class( $classes ) {
@@ -14,7 +15,8 @@ endif;
 add_filter( 'body_class', 'aperitto_set_body_class' );
 
 
-/* set page layout
+/*
+ set page layout
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_get_layout' ) ) :
 	function aperitto_get_layout() {
@@ -31,7 +33,7 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 		// get custom page layout
 		if ( is_singular() ) {
 
-			if ( is_singular('product') ){
+			if ( is_singular( 'product' ) ) {
 				$layout_post = get_theme_mod( 'layout_product', 'rightbar' );
 			}
 
@@ -59,13 +61,13 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 			$layout = $layout_home;
 		}
 		// woocommerce shop
-		elseif ( function_exists( 'is_shop' )  ) {
+		elseif ( function_exists( 'is_shop' ) ) {
 
-			if ( is_shop() ){
+			if ( is_shop() ) {
 				$layout = get_theme_mod( 'layout_shop', 'full' );
 			}
 
-			if ( is_tax('product_cat') ) {
+			if ( is_tax( 'product_cat' ) ) {
 				$layout = get_theme_mod( 'layout_product_cat', 'rightbar' );
 			}
 		}
@@ -82,7 +84,8 @@ if ( ! function_exists( 'aperitto_get_layout' ) ) :
 endif;
 
 
-/* set custom posts classes
+/*
+ set custom posts classes
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_set_post_class' ) ) :
 	function aperitto_set_post_class( $classes ) {
@@ -106,7 +109,8 @@ endif;
 add_filter( 'post_class', 'aperitto_set_post_class' );
 
 
-/* set default setting for galleries
+/*
+ set default setting for galleries
  * ========================================================================== */
 if ( ! function_exists( 'aperitto_set_gallery_defaults' ) ) :
 	function aperitto_set_gallery_defaults( $attr ) {

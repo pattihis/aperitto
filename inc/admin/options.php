@@ -12,7 +12,8 @@ if ( ! defined( 'APERITTO_URI' ) ) {
 define( 'APERITTO_OPTION', 'aperitto_theme_options_' . APERITTO_APP_NAME );
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
 * 	customize get_option for theme options
 * ========================================================================== */
 if ( ! function_exists( 'aperitto_get_theme_option' ) ) :
@@ -32,7 +33,8 @@ if ( ! function_exists( 'aperitto_get_theme_option' ) ) :
 endif;
 
 
-/* ==========================================================================
+/*
+ ==========================================================================
 * 	customize get_option for theme options
 * ========================================================================== */
 function aperitto_backward_compatible_theme_option_name() {
