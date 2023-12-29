@@ -50,7 +50,6 @@ if ( ! function_exists( 'aperitto_setup' ) ) :
 			$args['header-text'] = array( 'blog-name' );
 		}
 		add_theme_support( 'custom-logo', $args );
-
 	}
 endif;
 add_action( 'after_setup_theme', 'aperitto_setup' );
@@ -75,7 +74,6 @@ if ( ! function_exists( 'aperitto_enqueue_style_and_script' ) ) :
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply', false, true, true );
 		}
-
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'aperitto_enqueue_style_and_script' );
@@ -111,7 +109,6 @@ if ( ! function_exists( 'aperitto_widgets_init' ) ) :
 				'after_title'   => '</p>',
 			)
 		);
-
 	}
 endif;
 add_action( 'widgets_init', 'aperitto_widgets_init' );
@@ -128,52 +125,52 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 		$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
 		?>
 		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
-		<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+			<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 
-			<footer class="comment-meta">
-				<div class="comment-author">
+				<footer class="comment-meta">
+					<div class="comment-author">
+						<?php
+						if ( 0 !== $args['avatar_size'] ) {
+							echo get_avatar( $comment, $args['avatar_size'] );
+						}
+						?>
+						<b class="fn"><?php comment_author_link(); ?></b>
+					</div>
+
+					<div class="comment-metadata">
+						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
+							<time datetime="<?php comment_time( 'c' ); ?>">
+								<?php printf( __( '%1$s at %2$s', 'aperitto' ), get_comment_date(), get_comment_time() ); ?>
+							</time>
+						</a>
+						<?php edit_comment_link( __( 'Edit', 'aperitto' ), '<span class="edit-link">', '</span>' ); ?>
+					</div>
+
+					<?php if ( '0' === $comment->comment_approved ) : ?>
+						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'aperitto' ); ?></p>
+					<?php endif; ?>
+				</footer>
+
+				<div class="comment-content">
+					<?php comment_text(); ?>
+				</div>
+
+				<div class="reply">
 					<?php
-					if ( 0 != $args['avatar_size'] ) {
-						echo get_avatar( $comment, $args['avatar_size'] );
-					}
-					?>
-					<b class="fn"><?php comment_author_link(); ?></b>
-				</div>
-
-				<div class="comment-metadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
-						<time datetime="<?php comment_time( 'c' ); ?>">
-							<?php printf( __( '%1$s at %2$s', 'aperitto' ), get_comment_date(), get_comment_time() ); ?>
-						</time>
-					</a>
-					<?php edit_comment_link( __( 'Edit', 'aperitto' ), '<span class="edit-link">', '</span>' ); ?>
-				</div>
-
-				<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'aperitto' ); ?></p>
-				<?php endif; ?>
-			</footer>
-
-			<div class="comment-content">
-				<?php comment_text(); ?>
-			</div>
-
-			<div class="reply">
-				<?php
-				comment_reply_link(
-					array_merge(
-						$args,
-						array(
-							'add_below' => 'div-comment',
-							'depth'     => $depth,
-							'max_depth' => $args['max_depth'],
+					comment_reply_link(
+						array_merge(
+							$args,
+							array(
+								'add_below' => 'div-comment',
+								'depth'     => $depth,
+								'max_depth' => $args['max_depth'],
+							)
 						)
-					)
-				);
-				?>
-			</div>
+					);
+					?>
+				</div>
 
-		</div>
+			</div>
 
 		<?php
 
@@ -181,29 +178,45 @@ if ( ! function_exists( 'aperitto_html5_comment' ) ) :
 endif;
 
 
-/*
- ==========================================================================
- *  Include libs
- * ========================================================================== */
+/**
+ * Include libraries
+ */
 
-// functions to display some page parts
+// functions to display some page parts.
 require_once get_template_directory() . '/inc/html-blocks.php';
 
-// layout functions and filters
+// layout functions and filters.
 require_once get_template_directory() . '/inc/layout.php';
 
-// hooks
+// hooks.
 require_once get_template_directory() . '/inc/hooks.php';
 require_once get_template_directory() . '/inc/woo-hooks.php';
 
-// theme options with Customizer API
+// theme options with Customizer API.
 require_once get_template_directory() . '/inc/admin/options.php';
 require_once get_template_directory() . '/inc/customizer/customizer-controls.php';
 require_once get_template_directory() . '/inc/customizer/customizer-settings.php';
 require_once get_template_directory() . '/inc/customizer/customizer.php';
 
 if ( is_admin() ) :
-	// meta-box for layout control
+	// meta-box for layout control.
 	require_once get_template_directory() . '/inc/admin/meta-boxes.php';
 
 endif;
+
+
+/**
+ * Add data-title attribute to nav menu items
+ *
+ * @param array    $atts The HTML attributes applied to the menu item's <a> element, empty strings are ignored.
+ * @param WP_Post  $item The current menu item.
+ * @param stdClass $args An object of wp_nav_menu() arguments.
+ * @return array
+ * @since 1.0.0
+ */
+function gp_add_data_atts_to_nav( $atts, $item, $args ) {
+	$atts['title'] = $item->title;
+	$atts['data-poutsa'] = $item->title;
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'gp_add_data_atts_to_nav', 10, 4 );

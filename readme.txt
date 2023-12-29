@@ -1,8 +1,9 @@
 === Aperitto ===
 Contributors: pattihis
-Requires at least: WordPress 5.0
-Tested up to: WordPress 6.0
-Version: 1.0.6
+Version: 1.1.0
+Requires at least: 5.3.0
+Tested up to: 6.4.2
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, microformats
@@ -27,9 +28,11 @@ Aperitto is a simple, minimal, responsive WordPress theme. The clean typography 
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.1.0 =
 * Fix Back-To-Top with main theme color
-* Sync Translation Files
+* Improve Main Navigation for Accessibility
+* Improve Footer Copyright Options
+* Update Translation Files
 
 = 1.0.5 =
 * Clean up code and format by WPCS
@@ -60,7 +63,7 @@ Aperitto is a simple, minimal, responsive WordPress theme. The clean typography 
 
 == Copyright ==
 
-Aperitto WordPress Theme, Copyright 2021 George Pattihis
+Aperitto WordPress Theme, Copyright 2021 George Pattichis
 Aperitto theme files, scripts, icons and images are distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify

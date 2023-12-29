@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aperitto\n"
 "POT-Creation-Date: 2016-11-02 10:36+0200\n"
-"PO-Revision-Date: 2022-09-05 20:43+0000\n"
-"Last-Translator: George Pattihis <gpattihis@gmail.com>\n"
+"PO-Revision-Date: 2023-12-29 10:44+0000\n"
+"Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,10 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _;_e;__;_x\n"
 "X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.6.6; wp-6.4.2"
 
-#: functions.php:146
+#: functions.php:143
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s um %2$s"
@@ -31,19 +33,19 @@ msgstr "&larr; Ältere Kommentare"
 
 #: inc/woo-hooks.php:16
 msgid "Add to Cart"
-msgstr ""
+msgstr "Zum Warenkorb hinzufügen"
 
-#: functions.php:107
+#: functions.php:105
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Hier Widgets hinzufügen, um diese in der Seitenleiste anzeigen."
 
-#: inc/customizer/customizer-settings.php:765
+#: inc/customizer/customizer-settings.php:786
 msgid "All rights reserved"
 msgstr "Alle Rechte vorbehalten"
 
 #. Name of the theme
 msgid "Aperitto"
-msgstr ""
+msgstr "Aperitto"
 
 #. Description of the theme
 msgid ""
@@ -57,10 +59,21 @@ msgid ""
 "WooCommerce and bbPress. Translation ready with German, Greek, French, "
 "Japanese, Polish, Russian, Turkish and Ukrainian included."
 msgstr ""
+"Aperitto ist ein einfaches, minimalistisches und responsives WordPress-Theme."
+" Die klare Typografie und die grundlegenden Layoutoptionen machen es zu "
+"einem großartigen Start für jedes Projekt. Dank der benutzerfreundlichen "
+"Anpassungsoptionen ist Ihre Website in wenigen Minuten betriebsbereit. Es "
+"bietet benutzerdefinierte Farboptionen, benutzerdefinierte Layouts (linke "
+"oder rechte Seitenleiste, Inhalte in voller Breite oder zentriert) sowie "
+"sauberen, gültigen und SEO-freundlichen Code. Aperitto kann mit "
+"untergeordneten Themen verwendet werden und ist mit benutzerdefinierten "
+"Filtern, Hooks und Aktionen entwicklerfreundlich. Vollständig kompatibel mit "
+"WPML, WooCommerce und bbPress. Übersetzungsbereit mit Deutsch, Griechisch, "
+"Französisch, Japanisch, Polnisch, Russisch, Türkisch und Ukrainisch."
 
-#: footer.php:44
+#: footer.php:54
 msgid "Aperitto Theme"
-msgstr ""
+msgstr "Aperitto Thema"
 
 #: archive.php:37
 msgid "Archive"
@@ -70,25 +83,25 @@ msgstr "Archiv"
 msgid "Author archives"
 msgstr "Autoren-Archiv"
 
-#: inc/customizer/customizer-settings.php:274
-msgid "Background with full repeat"
-msgstr ""
-
 #: inc/customizer/customizer-settings.php:275
-msgid "Background with horizontal repeat"
-msgstr ""
+msgid "Background with full repeat"
+msgstr "Hintergrund mit vollständiger Wiederholung"
 
 #: inc/customizer/customizer-settings.php:276
+msgid "Background with horizontal repeat"
+msgstr "Hintergrund mit horizontaler Wiederholung"
+
+#: inc/customizer/customizer-settings.php:277
 msgid "Background with vertical repeat"
-msgstr ""
+msgstr "Hintergrund mit vertikaler Wiederholung"
 
-#: inc/customizer/customizer-settings.php:273
+#: inc/customizer/customizer-settings.php:274
 msgid "Background without repeat"
-msgstr ""
+msgstr "Hintergrund ohne Wiederholung"
 
-#: inc/customizer/customizer-settings.php:146
+#: inc/customizer/customizer-settings.php:147
 msgid "Blog home page H1"
-msgstr ""
+msgstr "Blog-Homepage H1"
 
 #: sidebar.php:24
 msgid "Categories"
@@ -98,28 +111,28 @@ msgstr "Kategorien"
 msgid "Category"
 msgstr "Kategorie "
 
-#: inc/customizer/customizer-settings.php:127
+#: inc/customizer/customizer-settings.php:128
 msgid "Center"
 msgstr "Mittig"
 
-#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:437
-#: inc/customizer/customizer-settings.php:464
-#: inc/customizer/customizer-settings.php:491
-#: inc/customizer/customizer-settings.php:518
-#: inc/customizer/customizer-settings.php:546
-#: inc/customizer/customizer-settings.php:596
-#: inc/customizer/customizer-settings.php:621
-#: inc/customizer/customizer-settings.php:646
+#: inc/admin/meta-boxes.php:54 inc/customizer/customizer-settings.php:438
+#: inc/customizer/customizer-settings.php:465
+#: inc/customizer/customizer-settings.php:492
+#: inc/customizer/customizer-settings.php:519
+#: inc/customizer/customizer-settings.php:547
+#: inc/customizer/customizer-settings.php:597
+#: inc/customizer/customizer-settings.php:622
+#: inc/customizer/customizer-settings.php:647
 msgid "Centered Content"
 msgstr "Zentrieren"
 
-#: inc/customizer/customizer-settings.php:343
+#: inc/customizer/customizer-settings.php:344
 msgid "Choose main color"
 msgstr "Farbe auswählen"
 
-#: inc/customizer/customizer-settings.php:320
+#: inc/customizer/customizer-settings.php:321
 msgid "Color & Layout"
-msgstr ""
+msgstr "Farbe und Layout"
 
 #: comments.php:10 inc/html-blocks.php:113
 msgid "Comments"
@@ -129,13 +142,13 @@ msgstr "Kommentare"
 msgid "Comments count"
 msgstr "Zahl der Kommentare"
 
-#: inc/customizer/customizer-settings.php:195
+#: inc/customizer/customizer-settings.php:196
 msgid "Custom blog home H1"
-msgstr ""
+msgstr "Benutzerdefinierte Blog-Startseite H1"
 
-#: inc/customizer/customizer-settings.php:774
+#: inc/customizer/customizer-settings.php:795
 msgid "Custom copyright text"
-msgstr ""
+msgstr "Benutzerdefinierter Copyright-Text"
 
 #: inc/customizer/customizer-settings.php:712
 msgid "Customize footer"
@@ -149,17 +162,21 @@ msgstr "Tagesarchiv:"
 msgid "Default"
 msgstr "Default"
 
-#: inc/customizer/customizer-settings.php:93
+#: inc/customizer/customizer-settings.php:94
 msgid "Description"
 msgstr "Untertitel"
 
-#: functions.php:149
+#: functions.php:146
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: inc/customizer/customizer-settings.php:296
+#: inc/customizer/customizer-settings.php:732
+msgid "Enable copyright section in footer"
+msgstr "Aktivieren Sie den Copyright-Bereich in der Fußzeile"
+
+#: inc/customizer/customizer-settings.php:297
 msgid "Fit minimal header height to image height"
-msgstr ""
+msgstr "Passen Sie die minimale Kopfzeilenhöhe an die Bildhöhe an"
 
 #: inc/customizer/customizer-settings.php:711
 msgid "Footer"
@@ -169,58 +186,54 @@ msgstr "Footer"
 msgid "Footer Menu"
 msgstr "Footer-Menü"
 
-#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:436
-#: inc/customizer/customizer-settings.php:463
-#: inc/customizer/customizer-settings.php:490
-#: inc/customizer/customizer-settings.php:517
-#: inc/customizer/customizer-settings.php:545
-#: inc/customizer/customizer-settings.php:595
-#: inc/customizer/customizer-settings.php:620
-#: inc/customizer/customizer-settings.php:645
+#: inc/admin/meta-boxes.php:49 inc/customizer/customizer-settings.php:437
+#: inc/customizer/customizer-settings.php:464
+#: inc/customizer/customizer-settings.php:491
+#: inc/customizer/customizer-settings.php:518
+#: inc/customizer/customizer-settings.php:546
+#: inc/customizer/customizer-settings.php:596
+#: inc/customizer/customizer-settings.php:621
+#: inc/customizer/customizer-settings.php:646
 msgid "Fullwidth Content"
 msgstr "Inhalt auf ganze Breite ausdehnen"
 
 #. Author of the theme
-msgid "George Pattihis"
-msgstr ""
+msgid "George Pattichis"
+msgstr "George Pattichis"
 
-#: inc/customizer/customizer-settings.php:538
+#: inc/customizer/customizer-settings.php:539
 msgid "Global layout"
 msgstr "Grundstruktur"
 
-#: inc/customizer/customizer-settings.php:16
+#: inc/customizer/customizer-settings.php:17
 msgid "Header Logo/Title"
-msgstr ""
+msgstr "Header-Logo/Titel"
 
-#: header.php:98 header.php:101
+#: header.php:116 header.php:119
 msgid "Home"
 msgstr "Hauptseite"
 
-#: inc/customizer/customizer-settings.php:169
+#: inc/customizer/customizer-settings.php:170
 msgid "Home H1 position"
-msgstr ""
+msgstr "Home-H1-Position"
 
-#: inc/customizer/customizer-settings.php:267
+#: inc/customizer/customizer-settings.php:268
 msgid "How to display image"
-msgstr ""
+msgstr "So zeigen Sie das Bild an"
 
 #. Author URI of the theme
-msgid "https://wordpress.org/support/users/pattihis/"
-msgstr ""
+msgid "https://profiles.wordpress.org/pattihis/"
+msgstr "https://profiles.wordpress.org/pattihis/"
 
-#. URI of the theme
-msgid "https://wordpress.org/themes/aperitto/"
-msgstr ""
+#: inc/customizer/customizer-settings.php:273
+msgid "Image after site title"
+msgstr "Bild nach dem Seitentitel"
 
 #: inc/customizer/customizer-settings.php:272
-msgid "Image after site title"
-msgstr ""
-
-#: inc/customizer/customizer-settings.php:271
 msgid "Image before site title"
-msgstr ""
+msgstr "Bild vor dem Seitentitel"
 
-#: inc/customizer/customizer-settings.php:539
+#: inc/customizer/customizer-settings.php:540
 msgid "It is used when individual page layout is not set"
 msgstr ""
 "Dies wird benutzt, wenn die individuelle Struktur nicht eingestellt ist"
@@ -228,59 +241,61 @@ msgstr ""
 #: 404.php:12
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
+"Es sieht so aus, als ob an dieser Stelle nichts gefunden wurde. Vielleicht "
+"versuchen Sie es mit einer Suche?"
 
-#: inc/customizer/customizer-settings.php:365
+#: inc/customizer/customizer-settings.php:366
 msgid "Layout"
 msgstr "Layout"
 
-#: inc/customizer/customizer-settings.php:430
+#: inc/customizer/customizer-settings.php:431
 msgid "Layout on Home"
 msgstr "Struktur für die Hauptseite"
 
-#: inc/customizer/customizer-settings.php:484
+#: inc/customizer/customizer-settings.php:485
 msgid "Layout on Page"
 msgstr "Seitenstruktur (Page)"
 
-#: inc/customizer/customizer-settings.php:457
+#: inc/customizer/customizer-settings.php:458
 msgid "Layout on Post"
 msgstr "Eintragsstruktur (Post)"
 
-#: inc/customizer/customizer-settings.php:511
+#: inc/customizer/customizer-settings.php:512
 msgid "Layout on Search results page"
-msgstr ""
+msgstr "Layout auf der Suchergebnisseite"
 
-#: inc/customizer/customizer-settings.php:614
+#: inc/customizer/customizer-settings.php:615
 msgid "Layout on WooCommerce Product page"
-msgstr ""
+msgstr "Layout auf der WooCommerce-Produktseite"
 
-#: inc/customizer/customizer-settings.php:639
+#: inc/customizer/customizer-settings.php:640
 msgid "Layout on WooCommerce Product's category"
-msgstr ""
+msgstr "Layout in der Kategorie des WooCommerce-Produkts"
 
-#: inc/customizer/customizer-settings.php:589
+#: inc/customizer/customizer-settings.php:590
 msgid "Layout on WooCommerce Shop page"
-msgstr ""
+msgstr "Layout auf der WooCommerce-Shop-Seite"
 
-#: inc/customizer/customizer-settings.php:125
+#: inc/customizer/customizer-settings.php:126
 msgid "Left"
 msgstr "Links"
 
-#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:435
-#: inc/customizer/customizer-settings.php:462
-#: inc/customizer/customizer-settings.php:489
-#: inc/customizer/customizer-settings.php:516
-#: inc/customizer/customizer-settings.php:544
-#: inc/customizer/customizer-settings.php:594
-#: inc/customizer/customizer-settings.php:619
-#: inc/customizer/customizer-settings.php:644
+#: inc/admin/meta-boxes.php:44 inc/customizer/customizer-settings.php:436
+#: inc/customizer/customizer-settings.php:463
+#: inc/customizer/customizer-settings.php:490
+#: inc/customizer/customizer-settings.php:517
+#: inc/customizer/customizer-settings.php:545
+#: inc/customizer/customizer-settings.php:595
+#: inc/customizer/customizer-settings.php:620
+#: inc/customizer/customizer-settings.php:645
 msgid "Leftbar"
 msgstr "Linke Spalte"
 
-#: inc/customizer/customizer-settings.php:33
+#: inc/customizer/customizer-settings.php:34
 msgid "Logo image display options"
-msgstr ""
+msgstr "Optionen für die Anzeige von Logobildern"
 
-#: inc/customizer/customizer-settings.php:342
+#: inc/customizer/customizer-settings.php:343
 msgid "Main color"
 msgstr "Grundfarbe"
 
@@ -288,7 +303,7 @@ msgstr "Grundfarbe"
 msgid "Main Menu"
 msgstr "Oberes Menü"
 
-#: inc/customizer/customizer-settings.php:322
+#: inc/customizer/customizer-settings.php:323
 msgid "Main theme options"
 msgstr "Grundeinstellungen"
 
@@ -300,9 +315,9 @@ msgstr "Nachricht"
 msgid "Monthly archives:"
 msgstr "Monatsarchive:"
 
-#: inc/customizer/customizer-settings.php:175
+#: inc/customizer/customizer-settings.php:176
 msgid "My custom title before posts"
-msgstr ""
+msgstr "Mein benutzerdefinierter Titel vor Beiträgen"
 
 #: comments.php:15 comments.php:35
 msgid "Newer Comments &rarr;"
@@ -316,15 +331,15 @@ msgstr "Weiter &raquo;"
 msgid "No results for "
 msgstr "Keine Ergebnisse für"
 
-#: inc/customizer/customizer-settings.php:37
+#: inc/customizer/customizer-settings.php:38
 msgid "Only image, without text"
 msgstr "Nur Bild, ohne Seitentitel"
 
 #: 404.php:8
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Hoppla! Diese Seite kann nicht gefunden werden."
 
-#: inc/customizer/customizer-settings.php:240
+#: inc/customizer/customizer-settings.php:241
 msgid "Other"
 msgstr "Andere"
 
@@ -334,26 +349,26 @@ msgstr "Andere Optionen"
 
 #: content.php:59 page.php:27
 msgid "Page"
-msgstr ""
+msgstr "Seite"
 
 #. %: Page number.
 #: content.php:62 page.php:30
 msgid "Page %"
-msgstr ""
+msgstr "Seite %"
 
-#: inc/customizer/customizer-settings.php:38
+#: inc/customizer/customizer-settings.php:39
 msgid "Picture above the text"
 msgstr "Bild über dem Text"
 
-#: inc/customizer/customizer-settings.php:39
+#: inc/customizer/customizer-settings.php:40
 msgid "Picture to the left of text"
 msgstr "Bild links von dem Text"
 
-#: inc/customizer/customizer-settings.php:40
+#: inc/customizer/customizer-settings.php:41
 msgid "Picture to the right of text"
 msgstr "Bild rechts von dem Text"
 
-#: inc/customizer/customizer-settings.php:41
+#: inc/customizer/customizer-settings.php:42
 msgid "Picture under the text"
 msgstr "Bild unter dem Text"
 
@@ -377,9 +392,9 @@ msgstr "Schlagworte"
 msgid "Posts not found"
 msgstr "Keine Einträge gefunden"
 
-#: footer.php:43
+#: footer.php:53
 msgid "Powered by"
-msgstr ""
+msgstr "Angetrieben von"
 
 #: inc/customizer/customizer-settings.php:696
 msgid "Publication date"
@@ -389,18 +404,18 @@ msgstr "Datum der Veröffentlichung"
 msgid "Read more"
 msgstr "Weiter Lesen"
 
-#: inc/customizer/customizer-settings.php:126
+#: inc/customizer/customizer-settings.php:127
 msgid "Right"
 msgstr "Rechts"
 
-#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:434
-#: inc/customizer/customizer-settings.php:461
-#: inc/customizer/customizer-settings.php:488
-#: inc/customizer/customizer-settings.php:515
-#: inc/customizer/customizer-settings.php:543
-#: inc/customizer/customizer-settings.php:593
-#: inc/customizer/customizer-settings.php:618
-#: inc/customizer/customizer-settings.php:643
+#: inc/admin/meta-boxes.php:39 inc/customizer/customizer-settings.php:435
+#: inc/customizer/customizer-settings.php:462
+#: inc/customizer/customizer-settings.php:489
+#: inc/customizer/customizer-settings.php:516
+#: inc/customizer/customizer-settings.php:544
+#: inc/customizer/customizer-settings.php:594
+#: inc/customizer/customizer-settings.php:619
+#: inc/customizer/customizer-settings.php:644
 msgid "Rightbar"
 msgstr "Rechte Spalte"
 
@@ -408,6 +423,8 @@ msgstr "Rechte Spalte"
 msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
+"Speichern Sie meinen Namen, meine E-Mail-Adresse und meine Website in diesem "
+"Browser für den nächsten Kommentar."
 
 #: searchform.php:3
 msgid "Search"
@@ -421,49 +438,49 @@ msgstr "Suchergebnisse für"
 msgid "Select Layout"
 msgstr "Layout auswählen"
 
-#: inc/customizer/customizer-settings.php:366
+#: inc/customizer/customizer-settings.php:367
 msgid "Set up layout for site pages"
 msgstr "Struktur für die Seite einstellen"
 
-#: inc/customizer/customizer-settings.php:753
+#: inc/customizer/customizer-settings.php:774
 msgid "Show 'Powered by' in footer"
-msgstr ""
+msgstr "„Powered by“ in der Fußzeile anzeigen"
 
-#: inc/customizer/customizer-settings.php:732
+#: inc/customizer/customizer-settings.php:753
 msgid "Show 'Sitename © Year' in footer"
-msgstr ""
+msgstr "Zeigen Sie „Sitename © Jahr“ in der Fußzeile an"
 
-#: inc/customizer/customizer-settings.php:409
+#: inc/customizer/customizer-settings.php:410
 msgid "Show featured images on mobile"
 msgstr "Miniaturansicht auf Handy anzeigen"
 
-#: inc/customizer/customizer-settings.php:389
+#: inc/customizer/customizer-settings.php:390
 msgid "Show sidebar on mobile"
 msgstr "Seitenleiste auf Handy anzeigen"
 
-#: inc/customizer/customizer-settings.php:217
+#: inc/customizer/customizer-settings.php:218
 msgid "Show site description"
 msgstr "Untertitel der Website anzeigen"
 
-#: functions.php:105
+#: functions.php:103
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
-#: inc/customizer/customizer-settings.php:306
+#: inc/customizer/customizer-settings.php:307
 msgid "Site Background"
-msgstr ""
+msgstr "Site-Hintergrund"
 
-#: inc/customizer/customizer-settings.php:61
+#: inc/customizer/customizer-settings.php:62
 msgid "Site title"
 msgstr "Titel der Website"
 
-#: inc/customizer/customizer-settings.php:174
+#: inc/customizer/customizer-settings.php:175
 msgid "Site title in header"
-msgstr ""
+msgstr "Site-Titel im Header"
 
-#: header.php:21
+#: header.php:35
 msgid "Skip to content"
-msgstr ""
+msgstr "Zum Inhalt springen"
 
 #: archive.php:22
 msgid "Tag"
@@ -473,11 +490,13 @@ msgstr "Schlagwort"
 msgid "Tags: "
 msgstr "Stichwörter: "
 
-#: inc/customizer/customizer-settings.php:170
+#: inc/customizer/customizer-settings.php:171
 msgid "This option not affect to other pages, for home blog page only."
 msgstr ""
+"Diese Option wirkt sich nicht auf andere Seiten aus, sondern nur auf die "
+"Startseite des Blogs."
 
-#: inc/customizer/customizer-settings.php:121
+#: inc/customizer/customizer-settings.php:122
 msgid "Title position"
 msgstr "Titelposition"
 
@@ -485,15 +504,15 @@ msgstr "Titelposition"
 msgid "What meta information to display for posts"
 msgstr "Welche Metadaten für Posts anzeigen"
 
-#: inc/customizer/customizer-settings.php:568
+#: inc/customizer/customizer-settings.php:569
 msgid "WooCommerce Layout"
-msgstr ""
+msgstr "WooCommerce-Layout"
 
 #: archive.php:32
 msgid "Year archives:"
 msgstr "Jahresarchiv:"
 
-#: functions.php:153
+#: functions.php:150
 msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar wartet auf Freischaltung."
 
